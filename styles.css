@@ -1,0 +1,11 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* -------- Temporary styles for structural html ----------*/
+
+div, nav, section {
+    border: 1px solid black;
+}
