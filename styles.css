@@ -43,8 +43,8 @@ Antique Brass (pink) - #CB997E */
 
 
 .gallery [class*="col-"] {
-  padding: 0.5%;
-}
+    padding: 2.5%;
+  }
 
 /* --------------------- Images --------------------------*/
 
@@ -95,8 +95,27 @@ Antique Brass (pink) - #CB997E */
 .bg-img-workshop-small {background-image: url('/images/las-flores-co-workshop-small.jpg');}
 
 /* Services - subscription banner*/
-.bg-img-subscription-banner {background-image: url('/images/las-flores-co-subscription-banner.jpg');}
+.bg-img-subscription-banner {
+    background-image: url('/images/las-flores-co-subscription-banner.jpg');
+    background-position: 50% 30%;
+}
 
+/* Services - delivery banner */
+.bg-img-delivery-banner {background-image: url('/images/las-flores-co-delivery-large-2.jpg');}
+
+/* Services - workshop banner */
+.bg-img-workshop-banner {background-image: url('/images/las-flores-co-workshop-banner-1.jpg');}
+
+/* Services - workshop */
+.bg-img-workshop-beginner {background-image: url('/images/las-flores-co-workshop-beginner-2.jpg');}
+.bg-img-workshop-intermediate {background-image: url('/images/las-flores-co-workshop-intermediate-1.jpg');}
+.bg-img-workshop-advanced {background-image: url('/images/las-flores-co-workshop-advanced-1.jpg');}
+
+/* Contact - store */
+.bg-img-store-contact {
+    background-image: url('/images/las-flores-co-store-contact.jpg');
+    padding-bottom: 0;
+}
 
 /* --------- Universal Styles & Utility classes ----------*/
 body {
@@ -176,7 +195,6 @@ p:last-child {
 a {
     color: inherit; 
     text-decoration: none; 
-    border-bottom: 1px solid;
 }
 
 a:hover{
@@ -244,6 +262,12 @@ a:hover{
     background-color: #CB997E;
 }
 
+.bg-light .button:hover  {
+    border: 2px solid #6B705C;
+    color: white;
+    background-color: #6B705C;
+}
+
 /*------------------------- Header en footer styles -----------------------*/
 
 .bg-image-header{
@@ -276,6 +300,10 @@ header h2 {
     color: #6B705C;
 }
 
+.logo {
+    font-family: 'Homemade Apple', sans-serif;
+}
+
 .logo:hover {
     color: #CB997E;
 }
@@ -295,7 +323,7 @@ footer a {
 /*------------------------------ Subscribe - button style --------------------------*/
             
               
-input {
+input, textarea {
     border-style: solid;
     border: 2px solid rgb(200, 200, 205);
     padding: 0.8em;
@@ -382,7 +410,7 @@ form .button {
     margin-top:-2px;
 }
 
-  /* Index - testimonial style */
+/* Index - testimonial style */
 
 .quote-icon{
     font-size: 6rem;
@@ -398,7 +426,7 @@ form .button {
     line-height: 1;
 }
 
-/*------------ Hover grid name and function --------------------*/
+/*------------ About - Hover grid name and function --------------------*/
             
               
 .hover-container {
@@ -433,4 +461,44 @@ form .button {
 }
   
               
-            
+/* About - review */
+.card-review {
+    padding: 2rem;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.profile {
+    width: 100%;
+    max-width: 8rem;
+    border-radius: 100%;
+    margin-bottom: 2rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.card-review .author {
+    font-weight: bold;
+    margin-bottom:0;
+}
+  
+.card-review .company {
+    margin-bottom: 2rem;
+}
+
+/* Services - subscription */ 
+
+.icon {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+/* Services - banner styles */
+
+.down {
+    color: white;
+    font-size: 3rem;
+    text-decoration: none;
+    border-bottom: none;
+}
+
