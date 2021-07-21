@@ -114,7 +114,7 @@ Antique Brass (pink) - #CB997E */
 /* Contact - store */
 .bg-img-store-contact {
     background-image: url('/images/las-flores-co-store-contact.jpg');
-    padding-bottom: 0;
+   
 }
 
 /* --------- Universal Styles & Utility classes ----------*/
@@ -128,8 +128,44 @@ body {
 .padded-2 {padding: 2%;}
 .padded-5 {padding: 5%;}
 .padded-10{padding: 10%;}
-.padding-right {padding-right: 1rem;}
-.padding-left {padding-left: 1rem;}
+
+.padded-t-5  {padding-top: 5%; }
+.padded-b-5  {padding-bottom: 5%; }
+.padded-l-5  {padding-left: 5%; }
+.padded-r-5  {padding-right: 5%; }
+
+.padded-tb-5  {padding-top: 5%; padding-bottom: 5%; }
+.padded-lr-5  {padding-left: 5%; padding-right: 5%; }
+
+.padded-tb-2  {padding-top: 2rem; padding-bottom: 2rem; }
+.padded-lr-2  {padding-left: 2rem; padding-right: 2rem; }
+
+.padded-tb-1 {padding-top: 1rem; padding-bottom: 1rem; }
+.padded-lr-1  {padding-left: 1rem; padding-right: 1rem; }
+
+.padded-tb-0 {padding-top: 0; padding-bottom: 0; }
+.padded-lr-0  {padding-left: 0; padding-right: 0; }
+
+.padded-t-1 {padding-top: 1rem; }
+.padded-b-1 {padding-bottom: 1rem; }
+.padded-l-1 {padding-left: 1rem; }
+.padded-r-1 {padding-right: 1rem; }
+
+.padded-t-2 {padding-top: 2rem; }
+.padded-b-2 {padding-bottom: 2rem; }
+.padded-l-2 {padding-left: 2rem; }
+.padded-r-2 {padding-right: 2rem; }
+
+.padded-t-0 {padding-top: 0; }
+.padded-b-0 {padding-bottom: 0; }
+.padded-l-0 {padding-left: 0; }
+.padded-r-0 {padding-right: 0; }
+
+
+.padded-right-1 {padding-right: 1rem;}
+.padded-left-1 {padding-left: 1rem;}
+
+.padding-bottom {padding: 0;}
 
 .tall-10{min-height:10vh; }
 .tall-20{min-height:20vh; }
@@ -159,8 +195,7 @@ body {
 
 .bg-fixed {
     background-attachment: fixed;
-}
-/* Typography styles */
+}/* Typography styles */
 
 h2 {
     font-size: 2.5rem;
