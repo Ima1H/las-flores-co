@@ -15,9 +15,13 @@
 
 
 <!-- This is our google font stylesheet catamaran (300, 400, 600) -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+
+<!-- This is our viewport meta to make the site responsive -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- This is our css stylesheet, this always goes last -->
 <link rel="stylesheet" href="styles.css" />
@@ -30,27 +34,41 @@
 <body>
 <!----------------------------- Header Banner --------------------------->
 
-    <header class="padded-1 grid-top tall-100 bg-image-header">
+    <header class="padded-1 grid-top tall-100 md-tall-80 bg-image-header">
         <div class="col-12-top grid">
-            <div class="col-3-middle"> 
-                <a href="/index.html"> 
+            <div class="col-4_md-12-middle md-text-center sm-text-left"> 
+                <a href="/index.html" > 
                     <h2 class="logo"> las flores co </h2> 
                 </a>
             </div>
 
-            <nav class="col-9-middle text-right"> 
+            <nav class="col-8_md-12-middle text-right md-text-center hide-sm"> 
                 <a href="/index.html"> Home </a>
                 <a href="/about.html"> About </a>
                 <a href="/bouquets.html"> Bouquets </a>
-                
+                <a href="/services.html"> Services </a>
+                <a class="md-padded-r-0" href="/contact.html"> Contact </a>
+            </nav>
+
+            <div class="col-1 show-sm">
+                <div class="hamburger-button"> 
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+    
+        </div>
+
+        <nav class="mobile-menu"> 
+            <a href="/index.html"> Home </a>
+                <a href="/about.html"> About </a>
+                <a href="/bouquets.html"> Bouquets </a>
                 <a href="/services.html"> Services </a>
                 <a href="/contact.html"> Contact </a>
-            </nav>
-        </div>
+        </nav>
 
         <div class="padded-5 col-12 grid-center">
             <div class="col-9"> 
-                <div class="text-center"> 
+                <div class="text-center md-bg-white"> 
                     <h3 class="big-text"> Why wait? </h3>
                     <h2> Your <span class="light-text"> magical bouquet </span> is a call away  </h3>
                     <a href="/bouquets.html" class="button"> Subscribe </a>
@@ -135,37 +153,46 @@
       
   <!-------------------------------- Footer  ------------------------------>
   <footer class="padded-5 grid-spaceBetween bg-dark"> 
-    <div class="col-4-bottom"> 
-        <a href="/index.html" class="logo">
-            <h2> las flores co </h2>
-        </a>
-        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam doloremque ratione enim assumenda aliquam voluptatibus facilis aperiam distinctio iusto.</p>
-    </div>
-
-
-    <div class="col-5-middle">
-        <nav class="inline text-right"> 
-            <a href="tel:#"> 04 555 5555 </a> |
-            <a href="mailto:#"> hello@lasflores.co </a> |
-            <a href="https://www.google.com/maps?client=safari&rls=en&q=55+Main+St,+Chicago&oe=UTF-8&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjBwPnBmcfxAhWS-aQKHcArDc0Q_AUoAXoECAEQAw"> 55 Main St, Chicago </a>
-        </nav> 
-
-        <nav class="inline text-right">
-            <a href="https://www.facebook.com/lasfloresco">
-                <i class="fab fa-facebook-square padded-r-1"></i>
+        <div class="col-6-bottom"> 
+            <a href="/index.html" class="logo">
+                <h2> las flores co </h2>
             </a>
+            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam doloremque ratione enim assumenda aliquam voluptatibus facilis aperiam distinctio iusto.</p>
+        </div>
+
+
+        <div class="col-5-middle">
+            <nav class="inline text-right"> 
+                <a href="tel:#"> 04 555 5555 </a> |
+                <a href="mailto:#"> hello@lasflores.co </a> |
+                <a href="https://www.google.com/maps?client=safari&rls=en&q=55+Main+St,+Chicago&oe=UTF-8&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjBwPnBmcfxAhWS-aQKHcArDc0Q_AUoAXoECAEQAw"> 55 Main St, Chicago </a>
+            </nav> 
+
+            <nav class="inline text-right">
+                <a href="https://www.facebook.com/lasfloresco">
+                    <i class="fab fa-facebook-square padded-r-1"></i>
+                </a>
+            
+                <a href="https://www.instragram.com/lasfloresco">
+                    <i class="fab fa-instagram-square padded-r-1"></i>
+                </a>
+
+                <a href="https://www.instragram.com/lasfloresco">
+                    <i class="fab fa-youtube-square"></i>
+                </a>
         
-            <a href="https://www.instragram.com/lasfloresco">
-                <i class="fab fa-instagram-square padded-r-1"></i>
-            </a>
+            </nav>
+        </div>
+    </footer>
 
-            <a href="https://www.instragram.com/lasfloresco">
-                <i class="fab fa-youtube-square"></i>
-            </a>
-    
-        </nav>
-    </div>
-</footer>
+ <!--------------------- Add jQuery -------------------->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+ <!-------------- custom javascript files -------------->
+ <script src="/scripts.js"></script> 
+
+  <!-- Slick Slider  --> 
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js" integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </body>
 
