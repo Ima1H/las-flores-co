@@ -6,7 +6,6 @@
 <!-- Title thats shows in tab of your browser : title to every project-->
 <title>  Services of las Flores Co </title>
 
-
 <!-- This is our font awesome icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -14,7 +13,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css" />
 
 
-<!-- This is our google font stylesheet catamaran (300, 400, 600) -->
+<!-- This is our google font stylesheet Noto Sans SC (300, 400, 600) & Amatic SC (400,700) -->
 <link rel="preconnect" href="https://fonts.googleapis.com"> 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
@@ -22,8 +21,15 @@
 <!-- This is our viewport meta to make the site responsive -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!--- Main CSS that handles all the functionality --->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!--- Slick theme that handles the way everything slides. Optional but very helpful --->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 <!-- This is our css stylesheet, this always goes last -->
 <link rel="stylesheet" href="styles.css" />
+
 
 
 </head>
@@ -34,11 +40,11 @@
 
     <!----------------------------- Header Banner --------------------------->
 
-    <header class="padded-1 grid-top tall-100 md-tall-80 bg-image-header">
+    <header class="padded-1 grid tall-100 md-tall-80 bg-image-header">
         <div class="col-12-top grid">
             <div class="col-4_md-12-middle md-text-center sm-text-left"> 
-                <a href="/index.html" > 
-                    <h2 class="logo"> las flores co </h2> 
+                <a href="/index.html"> 
+                    <h2 class="logo padded-l-2"> Las Flores Co </h2> 
                 </a>
             </div>
 
@@ -50,22 +56,24 @@
                 <a class="md-padded-r-0" href="/contact.html"> Contact </a>
             </nav>
 
-            <div class="col-1 show-sm">
+            <nav class="col-3 show-sm">
                 <div class="hamburger-button"> 
-                    <i class="fas fa-bars"></i>
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
                 </div>
-            </div>
-    
+
+                <div class="mobile-menu"> 
+                    <a href="/index.html"> Home </a>
+                    <a href="/about.html"> About </a>
+                    <a href="/bouquets.html"> Bouquets </a>
+                    <a href="/services.html"> Services </a>
+                    <a href="/contact.html"> Contact </a>
+                </div>
+            </nav>
         </div>
 
-        <nav class="mobile-menu"> 
-            <a href="/index.html"> Home </a>
-                <a href="/about.html"> About </a>
-                <a href="/bouquets.html"> Bouquets </a>
-                <a href="/services.html"> Services </a>
-                <a href="/contact.html"> Contact </a>
-        </nav>
-
+    
         <div class="padded-5 col-12 grid-center">
             <div class="col-9"> 
                 <div class="text-center md-bg-white">
@@ -86,7 +94,7 @@
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati provident, fugit ipsa magnam nihil velit eius maiores excepturi aut nostrum suscipit officiis voluptatum alias ipsam. </p>
         
         <div class="grid-equalHeight padded-1">   
-            <div class="padded-05 col-3"> 
+            <div class="padded-05 col-3_md-6_xs-12"> 
                 <a href="/contact.html#store" class="clickable-box bg-image" style="background-image: url('/images/las-flores-co-store-small.jpg');"> 
                     <div class="overlay padded-5"> 
                         <h3> Store  </h3>
@@ -95,7 +103,7 @@
                 </a>
             </div>
 
-            <div class="padded-05 col-3"> 
+            <div class="padded-05 col-3_md-6_xs-12"> 
                 <a href="/services.html#subscription" class="clickable-box bg-image" style="background-image: url('images/las-flores-co-subscription-small.jpg');">
                     <div class="overlay padded-5"> 
                         <h3> Subscription </h3>
@@ -104,7 +112,7 @@
                 </a>
             </div>
 
-            <div class="padded-05 col-3"> 
+            <div class="padded-05 col-3_md-6_xs-12"> 
                 <a href="/services.html#delivery" class="clickable-box bg-image" style="background-image: url('/images/las-flores-co-delivery-small.jpg');"> 
                     <div class="overlay padded-5"> 
                         <h3> Home delivery </h3>
@@ -113,7 +121,7 @@
                 </a>
             </div>
 
-            <div class="padded-05 col-3"> 
+            <div class="padded-05 col-3_md-6_xs-12"> 
                 <a href="/services.html#workshop" class="clickable-box bg-image" style="background-image: url('/images/las-flores-co-workshop-small.jpg');"> 
                     <div class="overlay padded-5"> 
                         <h3> Workshops </h3>
@@ -142,19 +150,19 @@
     <section id="subscribe-how" class="padded-5 text-center">
         <h2> How to start your subscription </h2>
         <div class="grid padded-1">
-          <div class="col-4 padded-1">
+          <div class="col-4_sm-12 padded-1">
             <i class="icon fas fa-fan"></i>
             <h4> Pick your bouquet </h4>
             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
           </div>
 
-          <div class="col-4 padded-1">
+          <div class="col-4_sm-12 padded-1">
             <i class="icon fas fa-calendar-check"></i>
             <h4> Choose how often and when </h4>
             <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
            
-          <div class="col-4 padded-1">
+          <div class="col-4_sm-12 padded-1">
             <i class="icon fas fa-user-circle"></i>
             <h4> Arrange your magical bouquet with your account </h4>
             <p>Irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -166,7 +174,7 @@
        
 
     <!-------------------------------- Home Delivery Image Banner  ------------------------------>
-    <section id="delivery" class="padded-5 tall-100 grid-center-middle bg-image bg-img-delivery-banner">
+    <section id="delivery" class="padded-5 tall-100 grid-center-middle bg-image bg-img-delivery-banner bg-fixed hide-xs">
     <!-- one sentence, so better to put it one heading -->
         <div class="col-12-middle">
             <h3> No time to come visit our store? </h3>
@@ -175,9 +183,18 @@
         </div>
     </section>
 
+    <section id="delivery" class="padded-5 tall-50 grid-center-middle bg-image bg-img-delivery-banner-mobile bg-fixed show-xs">
+        <!-- one sentence, so better to put it one heading -->
+        <div class="col-12-middle xs-bg-white text-center">
+            <h3> No time to come visit our store? </h3>
+            <h2> We <span class="light-text">deliver</span> at home for <span class="light-text">free </span></h2>  
+            <a href="/bouquets.html" class="button"> Pick your bouquet for delivery </a>
+        </div>
+    </section>
+
                
     <!-------------------------------- Reviews  ------------------------------>
-    <section class="text-center padded-5">
+    <section class="text-center padded-5 hide-sm">
         <h2> Reviews </h2>
         <div class="grid padded-1"> 
                
@@ -191,27 +208,27 @@
                 </div>
             </div>
     
-                <!---- Second Card ----->
-                <div class="col-4 padded-1">
-                    <div class="card-review"> 
-                        <img src="/images/las-flores-co-review-julie.jpg" class="profile">
-                        <p class="author"> Julie </p>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptate atque corrupti dolorum cumque. </p>
-                        <span> ★ ★ ★ ★ ★</span>
-                    </div>
-                </div>
-    
-                <!---- Third Card ----->
-                <div class="col-4 padded-1">
-                    <div class="card-review"> 
-                        <img src="/images/las-flores-co-review-jake.jpg" class="profile">
-                        <p class="author"> Jake </p>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptate atque corrupti dolorum cumque. </p>
-                        <span> ★ ★ ★ ★ ★</span>
-                    </div>
+        <!---- Second Card ----->
+            <div class="col-4 padded-1">
+                <div class="card-review"> 
+                    <img src="/images/las-flores-co-review-julie.jpg" class="profile">
+                    <p class="author"> Julie </p>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptate atque corrupti dolorum cumque. </p>
+                    <span> ★ ★ ★ ★ ★</span>
                 </div>
             </div>
-        </section>
+    
+            <!---- Third Card ----->
+            <div class="col-4 padded-1">
+                <div class="card-review"> 
+                    <img src="/images/las-flores-co-review-jake.jpg" class="profile">
+                    <p class="author"> Jake </p>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptate atque corrupti dolorum cumque. </p>
+                    <span> ★ ★ ★ ★ ★</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-------------------------------- Workshop banner  ------------------------------>
     <section id="workshop" class="padded-5 text-center tall-40 grid-center-middle bg-light">
@@ -228,38 +245,40 @@
 
     <!-------------------------------- Workshops ------------------------------>
     <section id="workshops-explained" class="grid">
-        <div class="padded-5 col-8-middle tall-40">
+        <div class="padded-5 col-8_xs-12-middle tall-40">
             <h2> Beginner workshops</h2>
             <p>We start of with the principles of designing an arrangement. At the end of the workshop you are able to make your own magical bouquet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae fugit omnis voluptatum esse laboriosam voluptate minima totam facilis, soluta officia eaque obcaecati quis, nisi saepe sit sunt quo ipsa suscipit?</p>
             <p class="medium-text"> $45 for the entire workshop </p>
             <a href="/contact.html#contact" class="button"> Contact us to make reservation </a>
         </div>
 
-        <div class="bg-image bg-img-workshop-beginner col-4 tall-40"> </div>
+        <div class="bg-image bg-img-workshop-beginner col-4_xs-12 tall-40"> </div>
 
-        <div class="bg-image bg-img-workshop-intermediate col-4 tall-40"> </div>
+        <div class="bg-image bg-img-workshop-intermediate col-4_xs-12 tall-40 hide-xs"> </div>
         
-        <div class="padded-5 col-8-middle tall-40 bg-dark">
+        <div class="padded-5 col-8_xs-12-middle tall-40 bg-dark">
             <h2> Intermediate workshops </h2>
             <p> Learn to make more specific arrengements that stand out in a room or place. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae fugit omnis voluptatum esse laboriosam voluptate minima totam facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, eligendi totam dolorum est et quo necessitatibus, porro vel, velit delectus inventore sit repellendus sapiente optio non nisi neque quaerat consequatur!</p>
             <p class="medium-text"> $60 for the entire workshop </p>
             <a href="/contact.html#contact" class="button"> Contact us to make reservation </a>
         </div>
+
+        <div class="bg-image bg-img-workshop-intermediate col-4_xs-12 tall-40 show-xs"> </div>
         
         
-        <div class="padded-5 col-8-middle tall-40">
+        <div class="padded-5 col_xs-12-8-middle tall-40">
             <h2> Advanced workshops </h2>
             <p> In our advanced workshops you will learn to make bouquets for special occasions, like weddings, with an extra touch of magic. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae fugit omnis voluptatum esse laboriosam voluptate minima totam facilis, soluta officia eaque obcaecati quis, nisi saepe sit sunt quo ipsa suscipit?</p>
             <p class="medium-text"> $90 for the entire workshop</p>
             <a href="/contact.html#contact" class="button"> Contact us to make reservation </a>
         </div>
 
-        <div class="bg-image bg-img-workshop-advanced col-4 tall-40"> </div>
+        <div class="bg-image bg-img-workshop-advanced col-4_xs-12 tall-40"> </div>
 
     </section>
 
     <!------------------------------- Call to action ------------------------>
-    <section class="grid-middle text-center padded-5 bg-light tall-50">
+    <section class="grid-middle text-center padded-5 bg-light tall-40">
         <div class="col-12"> 
             <h2> Stay in Touch</h2>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quod, nesciunt consequatur cupiditate excepturi harum perferendis nulla et tenetur magni! </p>
@@ -273,7 +292,36 @@
     </section>
 
     <!-------------------------------- Footer  ------------------------------>
-     <footer class="padded-5 grid-spaceBetween bg-dark"> 
+    <footer class="grid padded-5 text-center bg-dark show-md"> 
+        <div class="padded-5 col-12 grid-center">
+        <div class="col-6-middle">
+                <div> 
+                    <a href="/index.html" class="logo">
+                        <h2> las flores co </h2>
+                    </a>
+                </div>
+                <nav>
+                    <a href="https://www.facebook.com/lasfloresco">
+                        <i class="fab fa-facebook-square padded-r-1 "></i>
+                    </a>
+                
+                    <a href="https://www.instragram.com/lasfloresco">
+                        <i class="fab fa-instagram-square padded-r-1"></i>
+                    </a>
+
+                    <a href="https://www.instragram.com/lasfloresco">
+                        <i class="fab fa-youtube-square"></i>
+                    </a>
+                </nav>
+                <p class="padded-l-10 padded-r-10"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam doloremque ratione enim assumenda aliquam voluptatibus facilis aperiam distinctio iusto.</p>
+                <div class="inline text-center">
+                    <a href="/contact.html" class="button">  Contact us </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <footer class="padded-5 grid-spaceBetween bg-dark hide-md"> 
         <div class="col-6-bottom"> 
             <a href="/index.html" class="logo">
                 <h2> las flores co </h2>
@@ -283,15 +331,20 @@
 
 
         <div class="col-5-middle">
+
+            <div class="inline text-right">
+                <a href="/contact.html" class="button"> Contact us </a>
+            </div>
+        
             <nav class="inline text-right"> 
                 <a href="tel:#"> 04 555 5555 </a> |
                 <a href="mailto:#"> hello@lasflores.co </a> |
-                <a href="https://www.google.com/maps?client=safari&rls=en&q=55+Main+St,+Chicago&oe=UTF-8&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjBwPnBmcfxAhWS-aQKHcArDc0Q_AUoAXoECAEQAw"> 55 Main St, Chicago </a>
+                <a href="https://www.google.com/maps?client=safari&rls=en&q=55+Main+St,+Chicago&oe=UTF-8&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjBwPnBmcfxAhWS-aQKHcArDc0Q_AUoAXoECAEQAw"> 55 Main St, CH </a>
             </nav> 
 
-            <nav class="inline text-right">
+            <nav class="inline text-right ">
                 <a href="https://www.facebook.com/lasfloresco">
-                    <i class="fab fa-facebook-square padded-r-1"></i>
+                    <i class="fab fa-facebook-square padded-r-1 "></i>
                 </a>
             
                 <a href="https://www.instragram.com/lasfloresco">
@@ -301,7 +354,6 @@
                 <a href="https://www.instragram.com/lasfloresco">
                     <i class="fab fa-youtube-square"></i>
                 </a>
-        
             </nav>
         </div>
     </footer>

@@ -26,7 +26,6 @@ Antique Brass (pink) - #CB997E */
     background-image: url('images/las-flores-co-head-banner.jpg');
     background-position: center;
     background-size: cover;
-    min-height: 10rem;
 }
 
 /* Aspect Ratio  */
@@ -72,6 +71,12 @@ Antique Brass (pink) - #CB997E */
 .bg-img-anniversary {
     background-image: url('/images/las-flores-co-anniversary-1.jpg');
     background-position: 50% 49%;
+    min-height: 1vh;
+}
+
+/* About - meet our team */
+.bg-img-about-hannah {
+    background-position: 50% 40%;
 }
 
 /* About - Image banner mission */
@@ -86,8 +91,14 @@ Antique Brass (pink) - #CB997E */
     background-image: url('/images/las-flores-co-about-strong.jpg');
     background-position: 50% 40%;
 }
-.bg-img-about-farmer {background-image: url('/images/las-flores-co-about-farmer.jpg');}
+.bg-img-about-farmer {
+    background-image: url('/images/las-flores-co-about-farmer.jpg');
+    background-position: 100% 50%;
+}
+
 .bg-img-about-climate-nuteral {background-image: url('/images/las-flores-co-about-climate-neutral.jpg');}
+
+.bg-img-reviews-emma {background-image: url('/images/las-flores-co-review-emma.jpg');}
 
 /* Services small */ 
 .bg-img-store-small {background-image: url('/images/las-flores-co-store-small.jpg');}
@@ -103,6 +114,10 @@ Antique Brass (pink) - #CB997E */
 
 /* Services - delivery banner */
 .bg-img-delivery-banner {background-image: url('/images/las-flores-co-delivery-large-2.jpg');}
+.bg-img-delivery-banner-mobile {
+    background-image: url('/images/las-flores-co-delivery-large-2-mobile.jpg');
+    background-position: 50% 50%;
+}
 
 /* Services - workshop banner */
 .bg-img-workshop-banner {background-image: url('/images/las-flores-co-workshop-banner-1.jpg');}
@@ -113,10 +128,7 @@ Antique Brass (pink) - #CB997E */
 .bg-img-workshop-advanced {background-image: url('/images/las-flores-co-workshop-advanced-1.jpg');}
 
 /* Contact - store */
-.bg-img-store-contact {
-    background-image: url('/images/las-flores-co-store-contact.jpg');
-   
-}
+.bg-img-store-contact {background-image: url('/images/las-flores-co-store-contact.jpg')}
 
 /* --------- Universal Styles & Utility classes ----------*/
 body {
@@ -168,6 +180,10 @@ body {
 
 .padding-bottom {padding: 0;}
 
+.tall-05 {min-height:0.5vh; }
+.tall-1 {min-height:1vh; }
+.tall-2 {min-height:2vh; }
+.tall-5 {min-height:5vh; }
 .tall-10{min-height:10vh; }
 .tall-20{min-height:20vh; }
 .tall-30{min-height:30vh; }
@@ -196,7 +212,9 @@ body {
 
 .bg-fixed {
     background-attachment: fixed;
-}/* Typography styles */
+}
+
+/* Typography styles */
 
 h2 {
     font-size: 2.5rem;
@@ -206,7 +224,7 @@ h2 {
 
 h3 {
     font-size: 2rem;
-    line-height: 1.14;
+    line-height: 1.4;
     margin-bottom: 1rem;
     font-weight: 400; 
 }
@@ -240,10 +258,18 @@ a:hover{
 
 .small-text{font-size: 1.5rem;}
 .medium-text{
-    font-size: 1.8rem;
+    font-size: 2rem;
     line-height: 1.3;
 }
 .big-text{font-size: 4rem;}
+
+.title {
+    font-size: 1.2rem;
+    color: #6B705C;
+    margin-top: 0.5rem;
+    text-align: center;
+    font-weight: bold;
+}
 
 .subtitle { 
     font-size: 1.2rem;
@@ -268,6 +294,8 @@ a:hover{
 .text-right{text-align: right;}
 
 .uppercase {text-transform: uppercase;}
+.italic-text {font-style: italic;}
+.bold-text {font-weight: bold;}
 
 .margin-top {margin-top: 0.5rem;}
 .margin-bottom {margin-bottom: 0.5rem;}
@@ -319,7 +347,7 @@ header h3 {
 }
 
 header a {
-    color: inherit;
+    color: #43463a;
     text-decoration: none;
     display: inline-block;
     border-bottom: none;
@@ -462,6 +490,9 @@ footer a {
     padding: 0.5rem 0;
 }
 
+footer .button {
+    padding: 0.4rem 1rem;
+}
 
 /*------------------------------ Subscribe - button style --------------------------*/
             
@@ -526,15 +557,6 @@ form .button {
 
 /*--------------------------- Latest creations - slider gallery -----------------------------*/
 
-/*typography styles*/ 
-.title {
-    font-size: 0.9rem;
-    color: rgb(90,90,90);
-    margin-top: 0.5rem;
-    text-align: center;
-    font-style: italic;
-}
-
 /* background Image Slider */
 .bg-image-slider {
     background-color: rgb(240,240,240);
@@ -588,13 +610,13 @@ form .button {
 }
   
 .slick-dots li button::before {
-    color: teal;
+    color: #6B705C;
 }
   
 .slick-dots li.slick-active button::before {
-    color: darkblue;
+    color: #43463A;
 }
-
+  
 /* ------------- Index - services styles --------------*/
 /* clickable boxes */
 
@@ -693,7 +715,7 @@ form .button {
 
 .card-review .author {
     font-weight: bold;
-    margin-bottom:0;
+    margin-bottom: 0;
 }
   
 .card-review .company {
@@ -734,15 +756,26 @@ form .button {
     .show-md { display: block;}
     .hide-md { display: none;}
 
+    .md-tall-10 {min-height: 10vh;}
+    .md-tall-20 {min-height: 20vh;}
+    .md-tall-30 {min-height: 30vh;}
+    .md-tall-40 {min-height: 40vh;}
+    .md-tall-50 {min-height: 50vh;}
+    .md-tall-60 {min-height: 60vh;}
+    .md-tall-70 {min-height: 70vh;}
     .md-tall-80 {min-height: 80vh;}
+    .md-tall-90 {min-height: 90vh;}
+    .md-tall-100 {min-height: 100vh;}
 
     .md-text-center { text-align: center; }
     .md-text-left { text-align: left; }
     .md-text-right { text-align: right; }
 
-    .md-padded { padding: 5%; }
-    .md-padded-1 { padding: 1rem; }
-    .md-padded-05 { padding: 0.5rem; }
+    .md-padded-05 {padding: 0.5rem;}
+    .md-padded-1 {padding: 1rem;}
+    .md-padded-2 {padding: 2%;}
+    .md-padded-5 {padding: 5%;}
+    .md-padded-10{padding: 10%;}
 
     .md-padded-t-0 {padding-top: 0; }
     .md-padded-b-0 {padding-bottom: 0; }
@@ -786,7 +819,19 @@ form .button {
     .big-text {font-size: 6vw;}
 
     header h2 {font-size: 3.8vw;}
-    
+
+    footer h2 {
+        font-size: 3rem;
+        margin-bottom: 0;
+    }
+
+    footer nav a {
+        padding: 0.6rem;
+    }
+
+    footer .fab {
+        font-size: 2rem;
+    }
 }
 
 
@@ -795,23 +840,44 @@ form .button {
 
 @media (max-width: 48em) {
 
+    html {font-size: 14px;}
+    p {font-size: 1.1rem;}
+
     body {border: 2px solid blue; padding: 0.5rem;}
 
     .show-sm { display: block; }
     .hide-sm { display: none;  }
+
+    .sm-tall-10 {min-height: 10vh;}
+    .sm-tall-20 {min-height: 20vh;}
+    .sm-tall-30 {min-height: 30vh;}
+    .sm-tall-40 {min-height: 40vh;}
+    .sm-tall-50 {min-height: 50vh;}
+    .sm-tall-60 {min-height: 60vh;}
+    .sm-tall-70 {min-height: 70vh;}
+    .sm-tall-80 {min-height: 80vh;}
+    .sm-tall-90 {min-height: 90vh;}
+    .sm-tall-100 {min-height: 100vh;}
         
     .sm-text-center { text-align: center; }
     .sm-text-left { text-align: left; }
     .sm-text-right { text-align: right; }
 
-    .sm-padded { padding: 5%; }
-    .sm-padded-1 { padding: 1rem; }
-    .sm-padded-05 { padding: 0.5rem; }
+    .sm-padded-05 {padding: 0.5rem;}
+    .sm-padded-1 {padding: 1rem;}
+    .sm-padded-2 {padding: 2%;}
+    .sm-padded-5 {padding: 5%;}
+    .sm-padded-10{padding: 10%;}
 
     .sm-padded-t-0 { padding-top: 0; }
     .sm-padded-b-0 { padding-bottom: 0; }
     .sm-padded-l-0 { padding-left: 0; }
     .sm-padded-r-0 { padding-right: 0; }
+
+    .sm-padded-t-10 { padding-top: 10%; }
+    .sm-padded-b-10 { padding-bottom: 10%; }
+    .sm-padded-l-10 { padding-left: 10%; }
+    .sm-padded-r-10 { padding-right: 10%; }
     
     .sm-margin-t-1 { margin-top: 1rem; }
     .sm-margin-b-1 { margin-bottom: 1rem; }
@@ -823,17 +889,32 @@ form .button {
     .sm-margin-l-2 { margin-left: 2rem1; }
     .sm-margin-r-2 { margin-right: 2rem; }
 
-    
+    .hover-overlay {
+        padding-bottom: 50%;
+    }
+
     /* Header & footer  */
     .logo {font-size: 3rem;}
 
     /* Typgraphy styles */ 
     h2 {font-size: 4vw;}
 
+
+
     /* call to action */ 
     .email-signup input {
         max-width: 400px;  
     }
+
+    .medium-text {
+        font-size: 1.5rem;
+    }
+
+    .quote-icon {
+        font-size: 4rem;
+    }
+
+    
 
 }
 /* ------- XS Media Query (36em / 576px) --------------- */ 
@@ -846,13 +927,26 @@ form .button {
     .show-xs { display: block; }
     .hide-xs { display: none;  }
 
+    .xs-tall-10 {min-height: 10vh;}
+    .xs-tall-20 {min-height: 20vh;}
+    .xs-tall-30 {min-height: 30vh;}
+    .xs-tall-40 {min-height: 40vh;}
+    .xs-tall-50 {min-height: 50vh;}
+    .xs-tall-60 {min-height: 60vh;}
+    .xs-tall-70 {min-height: 70vh;}
+    .xs-tall-80 {min-height: 80vh;}
+    .xs-tall-90 {min-height: 90vh;}
+    .xs-tall-100 {min-height: 100vh;}
+
     .xs-text-center { text-align: center; }
     .xs-text-left { text-align: left; }
     .xs-text-right { text-align: right; }
 
-    .xs-padded { padding: 5%; }
-    .xs-padded-1 { padding: 1rem; }
-    .xs-padded-05 { padding: 0.5rem; }
+    .xs-padded-05 {padding: 0.5rem;}
+    .xs-padded-1 {padding: 1rem;}
+    .xs-padded-2 {padding: 2%;}
+    .xs-padded-5 {padding: 5%;}
+    .xs-padded-10{padding: 10%;}
 
     .xs-padded-t-0 { padding-top: 0; }
     .xs-padded-b-0 { padding-bottom: 0; }
@@ -874,10 +968,54 @@ form .button {
         margin-bottom: 0;
         
     }
+
     header nav a {
         padding-right: 1.5rem;
         padding-right: 0;
         font-size: 3vw;
     }
-    .logo h2 {font-size: 1.7rem;}
+
+    /* Services - home delivery */
+    .xs-bg-white {
+        background-color: rgba(247, 240, 240, 0.8);
+        padding: 1rem;
+    }
+}
+
+/* ------- XSS Media Query (25em / 400px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 400px, or zoomed in equivalent */ 
+
+@media (max-width: 25em) {
+    
+    html {font-size: 12px;}
+
+    body {border: 2px solid red; padding: 0.5rem;}
+
+    .show-xxs { display: block; }
+    .hide-xxs { display: none;  }
+
+    .xxs-text-center { text-align: center; }
+    .xxs-text-left { text-align: left; }
+    .xxs-text-right { text-align: right; }
+
+    .xxs-padded-05 {padding: 0.5rem;}
+    .xxs-padded-1 {padding: 1rem;}
+    .xxs-padded-2 {padding: 2%;}
+    .xxs-padded-5 {padding: 5%;}
+    .xxs-padded-10{padding: 10%;}
+
+    .xxs-padded-t-0 { padding-top: 0; }
+    .xxs-padded-b-0 { padding-bottom: 0; }
+    .xxs-padded-l-0 { padding-left: 0; }
+    .xxs-padded-r-0 { padding-right: 0; }
+    
+    .xxs-margin-t-1 { margin-top: 1rem; }
+    .xxs-margin-b-1 { margin-bottom: 1rem; }
+    .xxs-margin-l-1 { margin-left: 1rem; }
+    .xxs-margin-r-1 { margin-right: 1rem; }
+
+    .xxs-margin-t-2 { margin-top: 2rem; }
+    .xxs-margin-b-2 { margin-bottom: 2rem; }
+    .xxs-margin-l-2 { margin-left: 2rem1; }
+    .xxs-margin-r-2 { margin-right: 2rem; }
 }

@@ -14,17 +14,23 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css" />
 
 
-<!-- This is our google font stylesheet catamaran (300, 400, 600) -->
+<!-- This is our google font stylesheet Noto Sans SC (300, 400, 600) & Amatic SC (400,700) -->
 <link rel="preconnect" href="https://fonts.googleapis.com"> 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
-
 <!-- This is our viewport meta to make the site responsive -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!--- Main CSS that handles all the functionality --->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!--- Slick theme that handles the way everything slides. Optional but very helpful --->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 <!-- This is our css stylesheet, this always goes last -->
 <link rel="stylesheet" href="styles.css" />
+
 
 
 </head>
@@ -32,13 +38,13 @@
 <!-- This is the body of our html, this is where all of your page content goes -->
 
 <body>
-<!----------------------------- Header Banner --------------------------->
+    <!----------------------------- Header Banner --------------------------->
 
-    <header class="padded-1 grid-top tall-100 md-tall-80 bg-image-header">
+    <header class="padded-1 grid tall-100 md-tall-80 bg-image-header">
         <div class="col-12-top grid">
             <div class="col-4_md-12-middle md-text-center sm-text-left"> 
-                <a href="/index.html" > 
-                    <h2 class="logo"> las flores co </h2> 
+                <a href="/index.html"> 
+                    <h2 class="logo padded-l-2"> Las Flores Co </h2> 
                 </a>
             </div>
 
@@ -50,26 +56,27 @@
                 <a class="md-padded-r-0" href="/contact.html"> Contact </a>
             </nav>
 
-            <div class="col-1 show-sm">
+            <nav class="col-3 show-sm">
                 <div class="hamburger-button"> 
-                    <i class="fas fa-bars"></i>
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
                 </div>
-            </div>
-    
-        </div>
 
-        <nav class="mobile-menu"> 
-            <a href="/index.html"> Home </a>
-                <a href="/about.html"> About </a>
-                <a href="/bouquets.html"> Bouquets </a>
-                <a href="/services.html"> Services </a>
-                <a href="/contact.html"> Contact </a>
-        </nav>
+                <div class="mobile-menu"> 
+                    <a href="/index.html"> Home </a>
+                    <a href="/about.html"> About </a>
+                    <a href="/bouquets.html"> Bouquets </a>
+                    <a href="/services.html"> Services </a>
+                    <a href="/contact.html"> Contact </a>
+                </div>
+            </nav>
+        </div>
 
         <div class="padded-5 col-12 grid-center">
             <div class="col-9"> 
                 <div class="text-center md-bg-white"> 
-                    <h3 class="big-text"> Why wait? </h3>
+                    <h3 class="big-text"> Let's connect! </h3>
                     <h2> Your <span class="light-text"> magical bouquet </span> is a call away  </h3>
                     <a href="/bouquets.html" class="button"> Subscribe </a>
                 </div>
@@ -152,7 +159,36 @@
       </section>
       
   <!-------------------------------- Footer  ------------------------------>
-  <footer class="padded-5 grid-spaceBetween bg-dark"> 
+    <footer class="grid padded-5 text-center bg-dark show-md"> 
+        <div class="padded-5 col-12 grid-center">
+        <div class="col-6-middle">
+                <div> 
+                    <a href="/index.html" class="logo">
+                        <h2> las flores co </h2>
+                    </a>
+                </div>
+                <nav>
+                    <a href="https://www.facebook.com/lasfloresco">
+                        <i class="fab fa-facebook-square padded-r-1 "></i>
+                    </a>
+                
+                    <a href="https://www.instragram.com/lasfloresco">
+                        <i class="fab fa-instagram-square padded-r-1"></i>
+                    </a>
+
+                    <a href="https://www.instragram.com/lasfloresco">
+                        <i class="fab fa-youtube-square"></i>
+                    </a>
+                </nav>
+                <p class="padded-l-10 padded-r-10"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam doloremque ratione enim assumenda aliquam voluptatibus facilis aperiam distinctio iusto.</p>
+                <div class="inline text-center">
+                    <a href="/contact.html" class="button">  Contact us </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <footer class="padded-5 grid-spaceBetween bg-dark hide-md"> 
         <div class="col-6-bottom"> 
             <a href="/index.html" class="logo">
                 <h2> las flores co </h2>
@@ -162,15 +198,20 @@
 
 
         <div class="col-5-middle">
+
+            <div class="inline text-right">
+                <a href="/contact.html" class="button"> Contact us </a>
+            </div>
+        
             <nav class="inline text-right"> 
                 <a href="tel:#"> 04 555 5555 </a> |
                 <a href="mailto:#"> hello@lasflores.co </a> |
-                <a href="https://www.google.com/maps?client=safari&rls=en&q=55+Main+St,+Chicago&oe=UTF-8&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjBwPnBmcfxAhWS-aQKHcArDc0Q_AUoAXoECAEQAw"> 55 Main St, Chicago </a>
+                <a href="https://www.google.com/maps?client=safari&rls=en&q=55+Main+St,+Chicago&oe=UTF-8&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjBwPnBmcfxAhWS-aQKHcArDc0Q_AUoAXoECAEQAw"> 55 Main St, CH </a>
             </nav> 
 
-            <nav class="inline text-right">
+            <nav class="inline text-right ">
                 <a href="https://www.facebook.com/lasfloresco">
-                    <i class="fab fa-facebook-square padded-r-1"></i>
+                    <i class="fab fa-facebook-square padded-r-1 "></i>
                 </a>
             
                 <a href="https://www.instragram.com/lasfloresco">
@@ -180,7 +221,6 @@
                 <a href="https://www.instragram.com/lasfloresco">
                     <i class="fab fa-youtube-square"></i>
                 </a>
-        
             </nav>
         </div>
     </footer>
