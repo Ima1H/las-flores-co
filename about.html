@@ -1,78 +1,13 @@
-<!DOCTYPE html> 
-<html>
-<head> 
-<!-- This is the head of out html external resources and metadata: gridlex, fonts, etc -->
+---
+layout: default
+---
 
-<!-- Title thats shows in tab of your browser : title to every project-->
-<title>  About Las Flores Co </title>
-
-
-<!-- This is our font awesome icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-<!-- This is our grid stylesheet  -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css" />
-
-
-<!-- This is our google font stylesheet Noto Sans SC (300, 400, 600) & Amatic SC (400,700) -->
-<link rel="preconnect" href="https://fonts.googleapis.com"> 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-
-<!-- This is our viewport meta to make the site responsive -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!--- Main CSS that handles all the functionality --->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-<!--- Slick theme that handles the way everything slides. Optional but very helpful --->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-<!-- This is our css stylesheet, this always goes last -->
-<link rel="stylesheet" href="styles.css" />
-
-
-
-</head>
-
-<!-- This is the body of our html, this is where all of your page content goes -->
-
-<body>
 
     <!----------------------------- Header Banner --------------------------->
 
     <header class="padded-1 grid tall-100 md-tall-80 bg-image-header">
-        <div class="col-12-top grid">
-            <div class="col-4_md-12-middle md-text-center sm-text-left"> 
-                <a href="/index.html"> 
-                    <h2 class="logo padded-l-2"> Las Flores Co </h2> 
-                </a>
-            </div>
-
-            <nav class="col-8_md-12-middle text-right md-text-center hide-sm"> 
-                <a href="/index.html"> Home </a>
-                <a href="/about.html"> About </a>
-                <a href="/bouquets.html"> Bouquets </a>
-                <a href="/services.html"> Services </a>
-                <a class="md-padded-r-0" href="/contact.html"> Contact </a>
-            </nav>
-
-            <nav class="col-3 show-sm">
-                <div class="hamburger-button"> 
-                    <span class="hamburger-top"></span>
-                    <span class="hamburger-middle"></span>
-                    <span class="hamburger-bottom"></span>
-                </div>
-
-                <div class="mobile-menu"> 
-                    <a href="/index.html"> Home </a>
-                    <a href="/about.html"> About </a>
-                    <a href="/bouquets.html"> Bouquets </a>
-                    <a href="/services.html"> Services </a>
-                    <a href="/contact.html"> Contact </a>
-                </div>
-            </nav>
-        </div>
+        
+        {% include header-nav.html %}
     
         <div class="padded-5 col-12 grid-center">
             <div class="col-9"> 
