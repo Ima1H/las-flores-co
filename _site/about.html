@@ -1,0 +1,420 @@
+<!DOCTYPE html> 
+<html>
+<head> 
+<!-- This is the head of out html external resources and metadata: gridlex, fonts, etc -->
+
+<!-- Title thats shows in tab of your browser : title to every project-->
+<title>  Las Flores Co </title>
+
+
+<!-- This is our font awesome icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- This is our grid stylesheet  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css" />
+
+
+<!-- This is our google font stylesheet Noto Sans SC (300, 400, 600) & Amatic SC (400,700) -->
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+<!-- This is our viewport meta to make the site responsive -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--- Main CSS that handles all the functionality --->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!--- Slick theme that handles the way everything slides. Optional but very helpful --->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- This is our css stylesheet, this always goes last -->
+<link rel="stylesheet" href="styles.css" />
+
+
+</head>
+
+
+<body>
+
+    <!----------------------------- Header Banner --------------------------->
+
+    <header class="padded-1 grid tall-80 md-tall-80 bg-image-header">
+        
+        <div class="col-12-top grid">
+    <div class="col-4_md-12-middle md-text-center sm-text-left"> 
+        <a href="/index.html"> 
+            <h2 class="logo padded-l-2"> Las Flores Co </h2> 
+        </a>
+    </div>
+
+    <nav class="col-8_md-12-middle text-right md-text-center hide-sm"> 
+        <a href="/index.html"> Home </a>
+        <a href="/about.html"> About </a>
+        <a href="/bouquets.html"> Bouquets </a>
+        <a href="/services.html"> Services </a>
+        <a class="md-padded-r-0" href="/contact.html"> Contact </a>
+    </nav>
+
+    <nav class="col-3 show-sm">
+        <div class="hamburger-button"> 
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+        </div>
+
+        <div class="mobile-menu"> 
+            <a href="/index.html"> Home </a>
+            <a href="/about.html"> About </a>
+            <a href="/bouquets.html"> Bouquets </a>
+            <a href="/services.html"> Services </a>
+            <a href="/contact.html"> Contact </a>
+        </div>
+    </nav>
+</div>
+
+        <div class="padded-5 col-12 grid-center">
+            <div class="col-9"> 
+                <div class="text-center md-bg-white">
+                    <h3 class="big-text"> Creating lasting memories </h3>
+                    <h2> while keeping <span class="light-text">mother earth happy </span> </h2> 
+                    <a href="/bouquets.html" class="button"> Subscribe </a>
+                </div>
+            </div>
+        </div>
+    </header>
+   
+    <!--------------------- Hover grid name and function -------------------->
+    <section class="padded-5 tall-70 md-tall-50 bg-white"> 
+        <h2 class="text-center"> Meet our team</h2>
+        <p class="text-center"> We would love to make your day with our fresh and beautiful bouquets. </p>
+        <div class="grid padded-1">
+            <div class="col-4_sm-12 padded-1 sm-padded-l-10 sm-padded-r-10">
+                <div class="hover-container" style="background-image:url('/images/las-flores-co-team-alisa.jpg')">
+                    <div class="hover-overlay">
+                        <div class="text-center hover-inner">
+                            <h3> Alisa </h3>
+                            <p> Founder </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-4_sm-12 padded-1 sm-padded-l-10 sm-padded-r-10">
+                <div class="hover-container" style="background-image:url('/images/las-flores-co-team-hannah.jpg')">
+                    <div class="hover-overlay">
+                        <div class="text-center hover-inner">
+                            <h3> Hannah </h3>
+                            <p> Sales </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4_sm-12 padded-1 sm-padded-l-10 sm-padded-r-10">
+                <div class="hover-container" style="background-image:url('/images/las-flores-co-team-suzie.jpg')">
+                    <div class="hover-overlay">
+                        <div class="text-center hover-inner">
+                            <h3> Suzie </h3>
+                            <p> Quality & Styling </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------------------------------- Call to action ------------------------>
+    <section class="grid-middle text-center padded-5 bg-dark tall-40">
+        <div class="col-12"> 
+            <h2> Stay in Touch</h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quod, nesciunt consequatur cupiditate excepturi harum perferendis nulla et tenetur magni! </p>
+
+            <form class="email-signup "action="htps://formspree.io/hello@theflower.co" method="POST">
+                <input type="text" name="name" placeholder="Your First Name">
+                <input type="e-mail" name="_replyto" placeholder="Your Email">
+                <input type="submit" value="Send" class="button">
+
+            </form>
+        </div>
+    </section>
+
+    <!----------------------- Image banner ------------------------>
+    <section class="grid-middle text-center tall-100 md-tall-50 bg-image bg-img-about-banner"> 
+        <div class="col-12"> 
+            <h3 class="padded-1 white-text big-text font-weight-extra-bold "> Creating lasting memories is our mission </h3>
+        </div>
+    </section>
+    
+
+    <!----------------------  Features section -------------------->
+    <section class="grid">
+        <div class="padded-5 col-7_md-12-middle tall-30">
+            <h2> We use a <span class="light-text"> sustainable </span> crop protection approach. No harmful residues for us. </h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae fugit omnis voluptatum esse laboriosam voluptate minima totam facilis, soluta officia eaque obcaecati quis, nisi saepe sit sunt quo ipsa suscipit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eaque cupiditate hic deserunt quam omnis consequuntur vitae aliquid iste dolorem natus deleniti corporis corrupti impedit repellat, ut nemo id eligendi?</p>
+            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat quia atque ratione dolor sint natus, libero necessitatibus aliquid officiis sed. Unde perspiciatis ratione optio, distinctio magni voluptate doloribus tenetur cupiditate.</p>
+        </div>
+
+        <div class="bg-image bg-img-about-crop-protection col-5_md-12 tall-30"> </div>
+
+        <div class="bg-image bg-img-about-strong col-5 tall-30 hide-md"> </div>
+        
+        <div class="padded-5 col-7_md-12-middle tall-30 bg-dark">
+            <h2> We only choose the most  <span class="light-text"> beautiful </span> and <span class="light-text"> strong </span> flowers </h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae fugit omnis voluptatum esse laboriosam voluptate minima totam facilis. Soluta officia obcaecati quis nisi saepe sit sunt quo ipsa suscipit? Quae fugit omnis voluptatum esse laboriosam voluptate minima totam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, libero. Porro dicta laudantium veritatis veniam modi nobis sit. Soluta facere harum optio error eos blanditiis laudantium neque quia quos suscipit.</p>
+        </div>
+        
+
+        <div class="padded-5 col-7_md-12-middle tall-30">
+            <h2> Our flowers come from <span class="light-text"> local  </span> and <span class="light-text"> fair </span>  farmers </span></h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae fugit omnis voluptatum esse laboriosam voluptate minima totam facilis, soluta officia eaque obcaecati quis, nisi saepe sit sunt quo ipsa suscipit?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio expedita, iste labore sapiente est commodi odit facilis laborum ex doloremque ullam similique laudantium quam impedit delectus dolorum, consequatur minima explicabo? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi architecto delectus sit alias voluptatibus repellat? Ea vitae dolorem iusto quaerat omnis, recusandae officiis nihil error. Quas, soluta! Tempore, incidunt officia.</p>
+        </div>
+
+        <div class="bg-image bg-img-about-farmer col-5_md-12 tall-30"> </div>
+
+        <div class="bg-image bg-img-about-climate-nuteral col-5_md-12 tall-30 hide-md"> </div>
+        
+        <div class="padded-5 col-7_md-12-middle tall-30 bg-dark">
+            <h2> We are proud to be <span class="light-text"> 100%  climate neutral </span> </h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae fugit omnis voluptatum esse laboriosam voluptate minima totam facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ea repellendus eligendi ab voluptatem consequatur at provident, eos maiores, illum enim, et officia pariatur. Sequi repellat quaerat ipsum provident illum. </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ea repellendus eligendi ab voluptatem consequatur at provident, eos maiores, illum enim, et officia pariatur. Sequi repellat quaerat ipsum provident illum.</p>
+        </div>
+        
+
+    </section>
+    
+    <!-------------------------------- Reviews  ------------------------------>
+    <section class="text-center padded-5 bg-white">
+        <h2> Reviews </h2>
+        <div class="slider-container padded-1 dark-text hide-md"> 
+            
+            <!---- First Card ----->
+            <div class="slider-item text-center">
+                <div class="card-review"> 
+                    <img src="/images/las-flores-co-review-emma.jpg" class="profile">
+                    <p class="author"> Emma </p>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptate atque corrupti dolorum cumque. </p>
+                    <span> ★ ★ ★ ★ ★</span>
+                </div>
+            </div>
+
+            <!---- Second Card ----->
+            <div class="slider-item">
+                <div class="card-review"> 
+                    <img src="/images/las-flores-co-review-joshua.jpg" class="profile">
+                    <p class="author"> Joshua </p>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptate atque corrupti dolorum cumque. </p>
+                    <span> ★ ★ ★ ★ ★</span>
+                </div>
+            </div>
+
+            <!---- Third Card ----->
+            <div class="slider-item">
+                <div class="card-review"> 
+                    <img src="/images/las-flores-co-review-sylvie.jpg" class="profile">
+                    <p class="author"> Sylvie </p>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptate atque corrupti dolorum cumque. </p>
+                    <span> ★ ★ ★ ★ ★</span>
+                </div>
+            </div>
+        
+
+            <!---- Fourth Card ----->
+            <div class="slider-item">
+                <div class="card-review"> 
+                    <img src="/images/las-flores-co-review-rob.jpg" class="profile">
+                    <p class="author"> Rob </p>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptate atque corrupti dolorum cumque. </p>
+                    <span> ★ ★ ★ ★ ★</span>
+                </div>
+            </div>
+
+            <!---- Fifth Card ----->
+            <div class="slider-item">
+                <div class="card-review"> 
+                    <img src="/images/las-flores-co-review-julie.jpg" class="profile">
+                    <p class="author"> Julie </p>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptate atque corrupti dolorum cumque. </p>
+                    <span> ★ ★ ★ ★ ★</span>
+                </div>
+            </div>
+
+            <!---- Sixth Card ----->
+            <div class="slider-item">
+                <div class="card-review"> 
+                    <img src="/images/las-flores-co-review-jake.jpg" class="profile">
+                    <p class="author"> Jake </p>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptate atque corrupti dolorum cumque. </p>
+                    <span> ★ ★ ★ ★ ★</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonial-slider-container padded-1 dark-text show-md"> 
+            
+            <!---- First Card ----->
+            <div class="slider-item text-center">
+                <div class="card-review"> 
+                    <img src="/images/las-flores-co-review-emma.jpg" class="profile">
+                    <p class="author"> Emma </p>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptate atque corrupti dolorum cumque. </p>
+                    <span> ★ ★ ★ ★ ★</span>
+                </div>
+            </div>
+
+            <!---- Second Card ----->
+            <div class="slider-item">
+                <div class="card-review"> 
+                    <img src="/images/las-flores-co-review-joshua.jpg" class="profile">
+                    <p class="author"> Joshua </p>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptate atque corrupti dolorum cumque. </p>
+                    <span> ★ ★ ★ ★ ★</span>
+                </div>
+            </div>
+
+            <!---- Third Card ----->
+            <div class="slider-item">
+                <div class="card-review"> 
+                    <img src="/images/las-flores-co-review-sylvie.jpg" class="profile">
+                    <p class="author"> Sylvie </p>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptate atque corrupti dolorum cumque. </p>
+                    <span> ★ ★ ★ ★ ★</span>
+                </div>
+            </div>
+        
+
+            <!---- Fourth Card ----->
+            <div class="slider-item">
+                <div class="card-review"> 
+                    <img src="/images/las-flores-co-review-rob.jpg" class="profile">
+                    <p class="author"> Rob </p>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptate atque corrupti dolorum cumque. </p>
+                    <span> ★ ★ ★ ★ ★</span>
+                </div>
+            </div>
+
+            <!---- Fifth Card ----->
+            <div class="slider-item">
+                <div class="card-review"> 
+                    <img src="/images/las-flores-co-review-julie.jpg" class="profile">
+                    <p class="author"> Julie </p>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptate atque corrupti dolorum cumque. </p>
+                    <span> ★ ★ ★ ★ ★</span>
+                </div>
+            </div>
+
+            <!---- Sixth Card ----->
+            <div class="slider-item">
+                <div class="card-review"> 
+                    <img src="/images/las-flores-co-review-jake.jpg" class="profile">
+                    <p class="author"> Jake </p>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptate atque corrupti dolorum cumque. </p>
+                    <span> ★ ★ ★ ★ ★</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-------------------------------- Footer  ------------------------------>
+    <footer class="grid padded-5 text-center bg-dark show-md"> 
+        <div class="padded-5 col-12 grid-center">
+           <div class="col-6-middle">
+                <div> 
+                    <a href="/index.html" class="logo">
+                        <h2> las flores co </h2>
+                    </a>
+                </div>
+                <nav>
+                    <a href="https://www.facebook.com/lasfloresco">
+                        <i class="fab fa-facebook-square padded-r-1 "></i>
+                    </a>
+                
+                    <a href="https://www.instragram.com/lasfloresco">
+                        <i class="fab fa-instagram-square padded-r-1"></i>
+                    </a>
+
+                    <a href="https://www.instragram.com/lasfloresco">
+                        <i class="fab fa-youtube-square"></i>
+                    </a>
+                </nav>
+                <p class="padded-l-10 padded-r-10"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam doloremque ratione enim assumenda aliquam voluptatibus facilis aperiam distinctio iusto.</p>
+                <div class="inline text-center">
+                    <a href="/contact.html" class="button">  Contact us </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6-middle-center"> 
+        
+        </div>
+    
+    </footer>
+
+    <footer class="padded-5 grid-spaceBetween bg-dark hide-md"> 
+        <div class="col-6-bottom"> 
+            <a href="/index.html" class="logo">
+                <h2> las flores co </h2>
+            </a>
+            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam doloremque ratione enim assumenda aliquam voluptatibus facilis aperiam distinctio iusto.</p>
+        </div>
+
+
+        <div class="col-5-middle">
+
+            <div class="inline text-right">
+                <a href="/contact.html" class="button"> Contact us </a>
+            </div>
+           
+            <nav class="inline text-right"> 
+                <a href="tel:#"> 04 555 5555 </a> |
+                <a href="mailto:#"> hello@lasflores.co </a> |
+                <a href="https://www.google.com/maps?client=safari&rls=en&q=55+Main+St,+Chicago&oe=UTF-8&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjBwPnBmcfxAhWS-aQKHcArDc0Q_AUoAXoECAEQAw"> 55 Main St, CH </a>
+            </nav> 
+
+            <nav class="inline text-right ">
+                <a href="https://www.facebook.com/lasfloresco">
+                    <i class="fab fa-facebook-square padded-r-1 "></i>
+                </a>
+            
+                <a href="https://www.instragram.com/lasfloresco">
+                    <i class="fab fa-instagram-square padded-r-1"></i>
+                </a>
+
+                <a href="https://www.instragram.com/lasfloresco">
+                    <i class="fab fa-youtube-square"></i>
+                </a>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- GetButton.io widget -->
+    <script type="text/javascript">
+        (function () {
+            var options = {
+                whatsapp: "+45555555", // WhatsApp number
+                email: "hello@lasflores.co", // Email
+                call_to_action: "Need help?", // Call to action
+                button_color: "#A8CE50", // Color of button
+                position: "right", // Position may be 'right' or 'left'
+                order: "whatsapp,email", // Order of buttons
+            };
+            var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+            s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+            var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        })();
+    </script>
+    <!-- /GetButton.io widget -->
+
+   <!--------------------- Add jQuery -------------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-------------- custom javascript files -------------->
+    <script src="/scripts.js"></script> 
+
+    <!-- Slick Slider  --> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js" integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>

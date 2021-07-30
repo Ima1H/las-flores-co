@@ -1,0 +1,1021 @@
+/* Colors
+Ebony (green) - #6B705C
+(dark green) - #43463A
+Antique Brass (pink) - #CB997E */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+[class*="col-"], [class*="grid-"] {
+    padding: 0;
+}
+/* -------- Temporary styles for structural html ----------*/
+
+/*div, nav, section {
+    border: 1px solid black;
+}*/
+
+
+/*-------------------- Image Styles ----------------------*/
+/* Responsive Image Utility Classes  */
+.bg-image {
+    background-color: rgb(240,240,240);
+    background-image: url('images/las-flores-co-head-banner.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+/* Aspect Ratio  */
+.portrait-tall { padding-bottom: 175%; }
+.portrait { padding-bottom: 125%; }
+.square { padding-bottom: 100%; }
+.landscape { padding-bottom: 66%; }
+.landscape-wide { padding-bottom: 56%; }
+
+/* Background Position */
+.bg-pos-t { background-position: top; }
+.bg-pos-b { background-position: bottom; }
+.bg-pos-l { background-position: left; }
+.bg-pos-r { background-position: right; }
+
+
+.gallery [class*="col-"] {
+    padding: 2.5%;
+}
+
+/* --------------------- Images --------------------------*/
+
+/* Index - Latest Creations */ 
+
+.bg-img-gallery-1 {
+    background-image: url('/images/las-flores-co-gallery-1.jpg');
+    background-position: 50% 60%;
+}
+.bg-img-gallery-2 {
+    background-image: url('/images/las-flores-co-gallery-2.jpg');
+    background-position: 50% 64%;
+}
+.bg-img-gallery-3 {background-image: url('/images/las-flores-co-gallery-3.jpg');}
+.bg-img-gallery-4 {
+    background-image: url('/images/las-flores-co-gallery-4.jpg');
+    background-position: 50% 20%;
+}
+.bg-img-gallery-5 {background-image: url('/images/las-flores-co-gallery-5.jpg');}
+.bg-img-gallery-6 {background-image: url('/images/las-flores-co-gallery-6.jpg');}
+.bg-img-gallery-7 {background-image: url('/images/las-flores-co-gallery-7.jpg');}
+
+/* Index Image banner anniversary */
+.bg-img-anniversary {
+    background-image: url('/images/las-flores-co-anniversary-1.jpg');
+    background-position: 50% 49%;
+    min-height: 1vh;
+}
+
+/* About - meet our team */
+.bg-img-about-hannah {
+    background-position: 50% 40%;
+}
+
+/* About - Image banner mission */
+.bg-img-about-banner {
+    background-image: url('/images/las-flores-co-about-banner-2.jpg');
+    background-position: 50% 40%;
+}
+
+/* About - image features */
+.bg-img-about-crop-protection {background-image: url('/images/las-flores-co-about-crop-protection-2.jpg');}
+.bg-img-about-strong {
+    background-image: url('/images/las-flores-co-about-strong.jpg');
+    background-position: 50% 40%;
+}
+.bg-img-about-farmer {
+    background-image: url('/images/las-flores-co-about-farmer.jpg');
+    background-position: 100% 50%;
+}
+
+.bg-img-about-climate-nuteral {background-image: url('/images/las-flores-co-about-climate-neutral.jpg');}
+
+.bg-img-reviews-emma {background-image: url('/images/las-flores-co-review-emma.jpg');}
+
+/* Services small */ 
+.bg-img-store-small {background-image: url('/images/las-flores-co-store-small.jpg');}
+.bg-img-subscription-small {background-image: url('/images/las-flores-co-subscription-small.jpg');}
+.bg-img-delivery-small {background-image: url('/images/las-flores-co-delivery-small.jpg');}
+.bg-img-workshop-small {background-image: url('/images/las-flores-co-workshop-small.jpg');}
+
+/* Services - subscription banner*/
+.bg-img-subscription-banner {
+    background-image: url('/images/las-flores-co-subscription-banner.jpg');
+    background-position: 50% 30%;
+}
+
+/* Services - delivery banner */
+.bg-img-delivery-banner {background-image: url('/images/las-flores-co-delivery-large-2.jpg');}
+.bg-img-delivery-banner-mobile {
+    background-image: url('/images/las-flores-co-delivery-large-2-mobile.jpg');
+    background-position: 50% 50%;
+}
+
+/* Services - workshop banner */
+.bg-img-workshop-banner {background-image: url('/images/las-flores-co-workshop-banner-1.jpg');}
+
+/* Services - workshop */
+.bg-img-workshop-beginner {background-image: url('/images/las-flores-co-workshop-beginner-2.jpg');}
+.bg-img-workshop-intermediate {background-image: url('/images/las-flores-co-workshop-intermediate-1.jpg');}
+.bg-img-workshop-advanced {background-image: url('/images/las-flores-co-workshop-advanced-1.jpg');}
+
+/* Contact - store */
+.bg-img-store-contact {background-image: url('/images/las-flores-co-store-contact.jpg')}
+
+/* --------- Universal Styles & Utility classes ----------*/
+body {
+    font-family: 'Noto Sans SC', sans-serif;
+    color: #6B705C;
+}
+
+.padded-05 {padding: 0.5rem;}
+.padded-1 {padding: 1rem;}
+.padded-2 {padding: 2%;}
+.padded-5 {padding: 5%;}
+.padded-10{padding: 10%;}
+
+.padded-t-5  {padding-top: 5%; }
+.padded-b-5  {padding-bottom: 5%; }
+.padded-l-5  {padding-left: 5%; }
+.padded-r-5  {padding-right: 5%; }
+
+.padded-tb-5  {padding-top: 5%; padding-bottom: 5%; }
+.padded-lr-5  {padding-left: 5%; padding-right: 5%; }
+
+.padded-tb-2  {padding-top: 2rem; padding-bottom: 2rem; }
+.padded-lr-2  {padding-left: 2rem; padding-right: 2rem; }
+
+.padded-tb-1 {padding-top: 1rem; padding-bottom: 1rem; }
+.padded-lr-1  {padding-left: 1rem; padding-right: 1rem; }
+
+.padded-tb-0 {padding-top: 0; padding-bottom: 0; }
+.padded-lr-0  {padding-left: 0; padding-right: 0; }
+
+.padded-t-1 {padding-top: 1rem; }
+.padded-b-1 {padding-bottom: 1rem; }
+.padded-l-1 {padding-left: 1rem; }
+.padded-r-1 {padding-right: 1rem; }
+
+.padded-t-2 {padding-top: 2rem; }
+.padded-b-2 {padding-bottom: 2rem; }
+.padded-l-2 {padding-left: 2rem; }
+.padded-r-2 {padding-right: 2rem; }
+
+.padded-t-0 {padding-top: 0; }
+.padded-b-0 {padding-bottom: 0; }
+.padded-l-0 {padding-left: 0; }
+.padded-r-0 {padding-right: 0; }
+
+
+.padded-right-1 {padding-right: 1rem;}
+.padded-left-1 {padding-left: 1rem;}
+
+.padding-bottom {padding: 0;}
+
+.tall-05 {min-height:0.5vh; }
+.tall-1 {min-height:1vh; }
+.tall-2 {min-height:2vh; }
+.tall-5 {min-height:5vh; }
+.tall-10{min-height:10vh; }
+.tall-20{min-height:20vh; }
+.tall-30{min-height:30vh; }
+.tall-40{min-height:40vh; }
+.tall-50{min-height:50vh; }
+.tall-60{min-height:60vh; }
+.tall-70{min-height:70vh; }
+.tall-80{min-height:80vh; }
+.tall-90{min-height:90vh; }
+.tall-100{min-height:100vh;}
+
+.bg-dark {
+    background-color: #6B705C;
+    color: white;
+}
+
+.bg-light {
+    background-color: #CB997E;
+    color: white;
+}
+
+.bg-white {
+    background-color: white;
+    color:#6B705C;
+}
+
+.bg-fixed {
+    background-attachment: fixed;
+}
+
+/* Typography styles */
+
+h2 {
+    font-size: 2.5rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 2rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+    font-weight: 400; 
+}
+
+h4 {
+    font-size: 1.5rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+    font-weight: 400; 
+}
+
+p {
+    font-weight: 200; 
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+a {
+    color: inherit; 
+    text-decoration: none; 
+}
+
+a:hover{
+    color: #CB997E;
+}
+
+
+.small-text{font-size: 1.5rem;}
+.medium-text{
+    font-size: 2rem;
+    line-height: 1.3;
+}
+.big-text{font-size: 4rem;}
+
+.title {
+    font-size: 1.2rem;
+    color: #6B705C;
+    margin-top: 0.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.subtitle { 
+    font-size: 1.2rem;
+    color: rgb(120,120,125);
+}
+
+.bg-dark .subtitle  {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.dark-text{color: #6B705C;}
+.light-text{color: #CB997E;}
+.white-text{color: white;}
+
+.font-weight-light{font-weight: 300;}
+.font-weight-normal{font-weight: normal;}
+.font-weight-extra-bold{font-weight: 800;}
+
+.text-left {text-align: left;}
+.text-center{text-align: center;}
+.text-right{text-align: right;}
+
+.uppercase {text-transform: uppercase;}
+.italic-text {font-style: italic;}
+.bold-text {font-weight: bold;}
+
+.margin-top {margin-top: 0.5rem;}
+.margin-bottom {margin-bottom: 0.5rem;}
+
+/*--------------------------- Buttons -----------------------------*/
+
+.button {
+    color: inherit;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid;
+    padding: 0.8rem 1rem;
+    margin-top: 1rem;
+  }
+
+
+.button:hover {
+    border: 2px solid #6B705C;
+    color: white;
+    background-color: #6B705C;
+
+}
+
+.bg-dark .button:hover  {
+    border: 2px solid #CB997E;
+    color: white;
+    background-color: #CB997E;
+}
+
+.bg-light .button:hover  {
+    border: 2px solid #6B705C;
+    color: white;
+    background-color: #6B705C;
+}
+
+/*------------------------- Header en footer styles -----------------------*/
+
+.bg-image-header{
+    background-image: url('images/las-flores-co-head-banner.jpg');
+    background-position: 50% 20%;
+    background-size: cover;
+}
+
+header h3 {
+    line-height: 1;
+    color: #6B705C;
+    font-weight: 700;
+}
+
+header a {
+    color: #43463a;
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: none;
+    margin-bottom: 0.8rem;
+}
+
+header nav a {
+    padding-right: 2.5rem;
+    font-size: 1.2rem;
+}
+
+header h2 {
+    margin-bottom: 0;
+    color: #6B705C;
+}
+
+.logo {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+header .logo {
+    color: #43463a;
+}
+
+.logo:hover {
+    color: #CB997E;
+}
+
+/* Hamburger menu Daniels example */
+
+  
+/* this is where you style the button if you want to add more space between the spans than add padding to this div but make sure you also add it to the top and bottom active classes on there top/bottom or else your cross wont line up*/
+  
+.hamburger-button {
+    position:fixed;
+    top: 5vh;
+    right: 4vh;
+    z-index: 9;
+    padding: 8px;
+}
+
+/*this is where you can chand the color of the buttons*/
+.hamburger-button span{
+    width: 40px;
+    border: 2px solid #43463a;
+    background-color: #43463a;
+    display: block;
+    border-radius: 22px;
+    transition: 2s;
+    cursor: pointer;
+}
+
+.hamburger-button.active span{
+    border-color: white;
+    background-color:white;
+}
+  
+.hamburger-top, .hamburger-bottom{
+    position: absolute;
+}
+  
+.hamburger-top{
+    top: -02px;
+}
+  
+.hamburger-bottom{
+    bottom: -02px;
+}
+
+/* make sure this has the same top as the burger button has padding*/
+.hamburger-button.active .hamburger-top{
+    position: absolute;
+    top: 8px;
+    transform: rotateZ(45deg);
+}
+  
+.hamburger-button.active .hamburger-middle{
+
+/*   transform: rotateZ(270deg); */
+    border-color: rgba(0,0,0,0);
+    background-color:rgba(0,0,0,0);
+}
+  
+/* make sure this has the same bottom as the burger button has padding*/
+  
+.hamburger-button.active .hamburger-bottom{
+    position: absolute;
+    bottom: 8px;
+    transform: rotateZ(-45deg);
+}
+  
+.mobile-menu {
+    display: flex;
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    right: 0;
+    bottom: 100vh;
+    background-color: #CB997E;
+    padding: 5px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+    z-index: 8;
+    transition: 1s;
+    align-content: space-around;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.mobile-menu.active{
+    top:0;
+    bottom:0;
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+    display:block;
+    padding:5px 15px;
+    text-align:center;
+    white-space:nowrap;
+}
+  
+
+/*Footer*/
+
+footer a {
+    display: inline-block;
+    border-bottom: none;
+}
+
+.fab {font-size: 1.5rem;}
+
+.inline a {
+    display:inline-block;
+    padding: 0.5rem 0;
+}
+
+footer .button {
+    padding: 0.4rem 1rem;
+}
+
+/*------------------------------ Subscribe - button style --------------------------*/
+            
+              
+input, textarea {
+    border-style: solid;
+    border: 2px solid rgb(200, 200, 205);
+    padding: 0.8em;
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+}
+  
+input:focus, textarea:focus {
+    outline: none;
+    border: 2px solid #CB997E;
+}
+  
+textarea {
+    min-height: 7em;
+}
+  
+input[type="submit"] {
+    width: auto;
+    display: block;
+}
+  
+form {
+    padding: 5px;
+}
+  
+.email-signup input {
+    width: 30%;
+    display: inline-block;
+    max-width: 250px;
+    margin-top:1rem;
+    border: 2px solid (200, 200, 205);
+    background-color: white;    
+}
+  
+.email-signup .button {
+    border-color: white;
+    color: white;
+    background-color: inherit;
+    padding: 0.8em;
+    border-radius: 0;
+    font-size: 1rem;
+}
+
+
+form .button {
+    width:100%;
+}
+
+@media(max-width:768px) {
+    .email-signup input {
+    width: 100%;
+    max-width: 100%;
+    }
+}
+  
+
+/*--------------------------- Latest creations - slider gallery -----------------------------*/
+
+/* background Image Slider */
+.bg-image-slider {
+    background-color: rgb(240,240,240);
+    background-position: center;
+    background-size: cover;
+}
+
+/* Slider */ 
+.slider-container {
+    padding: 5%;
+}
+  
+.slider-item {
+    padding: 1rem;
+    display: none; /* otherwise your carousel would display as blocks;*/
+}
+  
+.slider-item:first-child { /* this makes sure that your first image of the carousel loads */
+    display: block;
+}
+  
+.slick-next::before {
+    content: '→';
+}
+  
+.slick-next {
+    right: 4px;
+}
+  
+.slick-prev {
+    left: 4px;
+}
+  
+.slick-next::before, .slick-prev::before {
+    font-family: slick;
+    /*padding: 0.5rem;*/
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: rgb(90,90,90);
+}
+  
+/* without this, the dots are not centered */ 
+.slick-dots {
+    left: 0;
+    bottom: -2px;
+}
+  
+.slick-dots li, .slick-dots li button {
+    width: 10px;
+}
+  
+.slick-dots li button::before {
+    color: #6B705C;
+}
+  
+.slick-dots li.slick-active button::before {
+    color: #43463A;
+}
+  
+/* ------------- Index - services styles --------------*/
+/* clickable boxes */
+
+.clickable-box {
+    color: inherit;
+    text-decoration: none;
+    box-shadow: 0 rgba(0, 0, 0, 0); /* so that we can add a transition */
+    transition: 0.2s all;
+    display: block;
+    border: none;
+}
+  
+.clickable-box .overlay {
+    min-height: 12rem;
+    padding: 3rem 1rem;
+    background-color: rgba(0,0,10,0.4);
+    color: white;
+}
+  
+.clickable-box p {
+    margin-bottom: 0;
+}
+  
+.clickable-box:hover {
+    background-color: rgba(0,0,10,0.6);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 20px -5px rgba(0, 0, 0, 0.4);
+    margin-top:-2px;
+}
+
+/* Index - testimonial style */
+
+.quote-icon{
+    font-size: 6rem;
+    color: rgb(120,120,125);
+    display: inline-block;
+    line-height: 1;
+}
+
+.bg-dark .quote-icon {
+    font-size: 6rem;
+    color: white;
+    display: inline-block;
+    line-height: 1;
+}
+
+/*------------ About - Hover grid name and function --------------------*/
+            
+              
+.hover-container {
+    background-size: cover;
+    background-position: center;
+}
+  
+.hover-overlay {
+    position: relative;
+    padding-bottom: 100%;
+    color: rgba(255, 255, 255, 0);
+    position: relative;
+    /* you only need to use relative + absolute if you want to determine the exact aspect ratio of the container */
+    transition: all 0.3s;
+}
+  
+.hover-overlay:hover {
+    background-color: rgba(60, 60, 60, 0.7);
+    color: white;
+}
+  
+.hover-inner {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+  
+.hover-inner p {
+    margin-bottom: 0;
+}
+  
+              
+/* About - review */
+.card-review {
+    padding: 2rem;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.profile {
+    width: 100%;
+    max-width: 8rem;
+    border-radius: 100%;
+    margin-bottom: 2rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.card-review .author {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+  
+.card-review .company {
+    margin-bottom: 2rem;
+}
+
+/* Services - subscription */ 
+
+.icon {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+/* Services - banner styles */
+
+.down {
+    color: white;
+    font-size: 3rem;
+    text-decoration: none;
+    border-bottom: none;
+}
+
+
+/* General CSS Responsive Styles (Apply everywhere unless overridden) */ 
+
+.show-xs, 
+.show-sm,
+.show-md {
+	display: none;
+}
+
+/* ------- MD Media Query (64em / 1024px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+
+@media (max-width: 64em) {
+    body {border: 2px solid green; padding: 0.5rem;}
+
+    .show-md { display: block;}
+    .hide-md { display: none;}
+
+    .md-tall-10 {min-height: 10vh;}
+    .md-tall-20 {min-height: 20vh;}
+    .md-tall-30 {min-height: 30vh;}
+    .md-tall-40 {min-height: 40vh;}
+    .md-tall-50 {min-height: 50vh;}
+    .md-tall-60 {min-height: 60vh;}
+    .md-tall-70 {min-height: 70vh;}
+    .md-tall-80 {min-height: 80vh;}
+    .md-tall-90 {min-height: 90vh;}
+    .md-tall-100 {min-height: 100vh;}
+
+    .md-text-center { text-align: center; }
+    .md-text-left { text-align: left; }
+    .md-text-right { text-align: right; }
+
+    .md-padded-05 {padding: 0.5rem;}
+    .md-padded-1 {padding: 1rem;}
+    .md-padded-2 {padding: 2%;}
+    .md-padded-5 {padding: 5%;}
+    .md-padded-10{padding: 10%;}
+
+    .md-padded-t-0 {padding-top: 0; }
+    .md-padded-b-0 {padding-bottom: 0; }
+    .md-padded-l-0 {padding-left: 0; }
+    .md-padded-r-0 {padding-right: 0; }
+
+    .md-padded-t-1 {padding-top: 1rem; }
+    .md-padded-b-1 {padding-bottom: 1rem; }
+    .md-padded-l-1 {padding-left: 1rem; }
+    .md-padded-r-1 {padding-right: 1rem; }
+
+    .md-padded-t-2 {padding-top: 2rem; }
+    .md-padded-b-2 {padding-bottom: 2rem; }
+    .md-padded-l-2 {padding-left: 2rem; }
+    .md-padded-r-2 {padding-right: 2rem; }
+
+    .md-margin-t-0 {margin-top: 0; }
+    .md-margin-b-0 { margin-bottom: 0; }
+    .md-margin-l-0 { margin-left: 0; }
+    .md-margin-r-0 { margin-right: 0; }
+    
+    .md-margin-t-1 { margin-top: 1rem; }
+    .md-margin-b-1 { margin-bottom: 1rem; }
+    .md-margin-l-1 { margin-left: 1rem; }
+    .md-margin-r-1 { margin-right: 1rem; }
+
+    .md-margin-t-2 { margin-top: 2rem; }
+    .md-margin-b-2 { margin-bottom: 2rem; }
+    .md-margin-l-2 { margin-left: 2rem1; }
+    .md-margin-r-2 { margin-right: 2rem; }
+
+    header nav a {
+        padding-right: 1.5rem;
+    }
+
+    .md-bg-white {
+        background-color: rgba(247, 240, 240, 0.8);
+        padding: 1rem;
+    }
+
+    .big-text {font-size: 6vw;}
+
+    header h2 {font-size: 3.8vw;}
+
+    footer h2 {
+        font-size: 3rem;
+        margin-bottom: 0;
+    }
+
+    footer nav a {
+        padding: 0.6rem;
+    }
+
+    footer .fab {
+        font-size: 2rem;
+    }
+}
+
+
+/* ------- SM Media Query (48em / 768px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 768px, or zoomed in equivalent */ 
+
+@media (max-width: 48em) {
+
+    html {font-size: 14px;}
+    p {font-size: 1.1rem;}
+
+    body {border: 2px solid blue; padding: 0.5rem;}
+
+    .show-sm { display: block; }
+    .hide-sm { display: none;  }
+
+    .sm-tall-10 {min-height: 10vh;}
+    .sm-tall-20 {min-height: 20vh;}
+    .sm-tall-30 {min-height: 30vh;}
+    .sm-tall-40 {min-height: 40vh;}
+    .sm-tall-50 {min-height: 50vh;}
+    .sm-tall-60 {min-height: 60vh;}
+    .sm-tall-70 {min-height: 70vh;}
+    .sm-tall-80 {min-height: 80vh;}
+    .sm-tall-90 {min-height: 90vh;}
+    .sm-tall-100 {min-height: 100vh;}
+        
+    .sm-text-center { text-align: center; }
+    .sm-text-left { text-align: left; }
+    .sm-text-right { text-align: right; }
+
+    .sm-padded-05 {padding: 0.5rem;}
+    .sm-padded-1 {padding: 1rem;}
+    .sm-padded-2 {padding: 2%;}
+    .sm-padded-5 {padding: 5%;}
+    .sm-padded-10{padding: 10%;}
+
+    .sm-padded-t-0 { padding-top: 0; }
+    .sm-padded-b-0 { padding-bottom: 0; }
+    .sm-padded-l-0 { padding-left: 0; }
+    .sm-padded-r-0 { padding-right: 0; }
+
+    .sm-padded-t-10 { padding-top: 10%; }
+    .sm-padded-b-10 { padding-bottom: 10%; }
+    .sm-padded-l-10 { padding-left: 10%; }
+    .sm-padded-r-10 { padding-right: 10%; }
+    
+    .sm-margin-t-1 { margin-top: 1rem; }
+    .sm-margin-b-1 { margin-bottom: 1rem; }
+    .sm-margin-l-1 { margin-left: 1rem; }
+    .sm-margin-r-1 { margin-right: 1rem; }
+
+    .sm-margin-t-2 { margin-top: 2rem; }
+    .sm-margin-b-2 { margin-bottom: 2rem; }
+    .sm-margin-l-2 { margin-left: 2rem1; }
+    .sm-margin-r-2 { margin-right: 2rem; }
+
+    .hover-overlay {
+        padding-bottom: 50%;
+    }
+
+    /* Header & footer  */
+    .logo {font-size: 3rem;}
+
+    /* Typgraphy styles */ 
+    h2 {font-size: 4vw;}
+
+
+
+    /* call to action */ 
+    .email-signup input {
+        max-width: 400px;  
+    }
+
+    .medium-text {
+        font-size: 1.5rem;
+    }
+
+    .quote-icon {
+        font-size: 4rem;
+    }
+
+    
+
+}
+/* ------- XS Media Query (36em / 576px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+
+@media (max-width: 36em) {
+    
+    body {border: 2px solid orange; padding: 0.5rem;}
+
+    .show-xs { display: block; }
+    .hide-xs { display: none;  }
+
+    .xs-tall-10 {min-height: 10vh;}
+    .xs-tall-20 {min-height: 20vh;}
+    .xs-tall-30 {min-height: 30vh;}
+    .xs-tall-40 {min-height: 40vh;}
+    .xs-tall-50 {min-height: 50vh;}
+    .xs-tall-60 {min-height: 60vh;}
+    .xs-tall-70 {min-height: 70vh;}
+    .xs-tall-80 {min-height: 80vh;}
+    .xs-tall-90 {min-height: 90vh;}
+    .xs-tall-100 {min-height: 100vh;}
+
+    .xs-text-center { text-align: center; }
+    .xs-text-left { text-align: left; }
+    .xs-text-right { text-align: right; }
+
+    .xs-padded-05 {padding: 0.5rem;}
+    .xs-padded-1 {padding: 1rem;}
+    .xs-padded-2 {padding: 2%;}
+    .xs-padded-5 {padding: 5%;}
+    .xs-padded-10{padding: 10%;}
+
+    .xs-padded-t-0 { padding-top: 0; }
+    .xs-padded-b-0 { padding-bottom: 0; }
+    .xs-padded-l-0 { padding-left: 0; }
+    .xs-padded-r-0 { padding-right: 0; }
+    
+    .xs-margin-t-1 { margin-top: 1rem; }
+    .xs-margin-b-1 { margin-bottom: 1rem; }
+    .xs-margin-l-1 { margin-left: 1rem; }
+    .xs-margin-r-1 { margin-right: 1rem; }
+
+    .xs-margin-t-2 { margin-top: 2rem; }
+    .xs-margin-b-2 { margin-bottom: 2rem; }
+    .xs-margin-l-2 { margin-left: 2rem1; }
+    .xs-margin-r-2 { margin-right: 2rem; }
+
+    header a {
+        display: block;
+        margin-bottom: 0;
+        
+    }
+
+    header nav a {
+        padding-right: 1.5rem;
+        padding-right: 0;
+        font-size: 3vw;
+    }
+
+    /* Services - home delivery */
+    .xs-bg-white {
+        background-color: rgba(247, 240, 240, 0.8);
+        padding: 1rem;
+    }
+}
+
+/* ------- XSS Media Query (25em / 400px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 400px, or zoomed in equivalent */ 
+
+@media (max-width: 25em) {
+    
+    html {font-size: 12px;}
+
+    body {border: 2px solid red; padding: 0.5rem;}
+
+    .show-xxs { display: block; }
+    .hide-xxs { display: none;  }
+
+    .xxs-text-center { text-align: center; }
+    .xxs-text-left { text-align: left; }
+    .xxs-text-right { text-align: right; }
+
+    .xxs-padded-05 {padding: 0.5rem;}
+    .xxs-padded-1 {padding: 1rem;}
+    .xxs-padded-2 {padding: 2%;}
+    .xxs-padded-5 {padding: 5%;}
+    .xxs-padded-10{padding: 10%;}
+
+    .xxs-padded-t-0 { padding-top: 0; }
+    .xxs-padded-b-0 { padding-bottom: 0; }
+    .xxs-padded-l-0 { padding-left: 0; }
+    .xxs-padded-r-0 { padding-right: 0; }
+    
+    .xxs-margin-t-1 { margin-top: 1rem; }
+    .xxs-margin-b-1 { margin-bottom: 1rem; }
+    .xxs-margin-l-1 { margin-left: 1rem; }
+    .xxs-margin-r-1 { margin-right: 1rem; }
+
+    .xxs-margin-t-2 { margin-top: 2rem; }
+    .xxs-margin-b-2 { margin-bottom: 2rem; }
+    .xxs-margin-l-2 { margin-left: 2rem1; }
+    .xxs-margin-r-2 { margin-right: 2rem; }
+}
