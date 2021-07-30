@@ -1,5 +1,19 @@
 ---
 layout: default
+team:
+- column-size: col-4_sm-12
+  background_image: /images/las-flores-co-team-alisa.jpg
+  name-team-member: Alisa
+  job-title: Founder
+- column-size: col-4_sm-12
+  background_image: /images/las-flores-co-team-hannah.jpg
+  name-team-member: Hannah
+  job-title: Sales
+- column-size: col-4_sm-12
+  background_image: /images/las-flores-co-team-suzie.jpg
+  name-team-member: Suzie
+  job-title: Quality & Styling
+
 ---
 
 
@@ -25,38 +39,23 @@ layout: default
         <h2 class="text-center"> Meet our team</h2>
         <p class="text-center"> We would love to make your day with our fresh and beautiful bouquets. </p>
         <div class="grid padded-1">
-            <div class="col-4_sm-12 padded-1 sm-padded-l-10 sm-padded-r-10">
-                <div class="hover-container" style="background-image:url('/images/las-flores-co-team-alisa.jpg')">
-                    <div class="hover-overlay">
-                        <div class="text-center hover-inner">
-                            <h3> Alisa </h3>
-                            <p> Founder </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
             
-            <div class="col-4_sm-12 padded-1 sm-padded-l-10 sm-padded-r-10">
-                <div class="hover-container" style="background-image:url('/images/las-flores-co-team-hannah.jpg')">
+            
+            {% for item in page.team %}
+
+            <div class="padded-1 sm-padded-l-10 sm-padded-r-10 {{item.column-size}}">
+                <div class="hover-container" style="background-image:url('{{item.background_image}}');">
                     <div class="hover-overlay">
                         <div class="text-center hover-inner">
-                            <h3> Hannah </h3>
-                            <p> Sales </p>
+                            <h3> {{item.name-team-member}} </h3>
+                            <p> {{item.job-title}} </p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-4_sm-12 padded-1 sm-padded-l-10 sm-padded-r-10">
-                <div class="hover-container" style="background-image:url('/images/las-flores-co-team-suzie.jpg')">
-                    <div class="hover-overlay">
-                        <div class="text-center hover-inner">
-                            <h3> Suzie </h3>
-                            <p> Quality & Styling </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
+            
         </div>
     </section>
 
