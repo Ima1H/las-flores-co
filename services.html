@@ -21,43 +21,24 @@ services:
   name-service: Workshops
   description: Learn to make your own masterpieces
   follow-link: /services.html#workshop
+reviews:
+- author: Rob
+  description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptate atque corrupti dolorum cumque.
+  image: /images/las-flores-co-review-rob.jpg
+- author: Julie
+  description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptate atque corrupti dolorum cumque.
+  image: /images/las-flores-co-review-julie.jpg
+- author: Jake
+  description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptate atque corrupti dolorum cumque.
+  image: /images/las-flores-co-review-jake.jpg
 ---
 
 
     <!----------------------------- Header Banner --------------------------->
 
     <header class="padded-1 grid tall-100 md-tall-80 bg-image-header">
-        <div class="col-12-top grid">
-            <div class="col-4_md-12-middle md-text-center sm-text-left"> 
-                <a href="/index.html"> 
-                    <h2 class="logo padded-l-2"> Las Flores Co </h2> 
-                </a>
-            </div>
-
-            <nav class="col-8_md-12-middle text-right md-text-center hide-sm"> 
-                <a href="/index.html"> Home </a>
-                <a href="/about.html"> About </a>
-                <a href="/bouquets.html"> Bouquets </a>
-                <a href="/services.html"> Services </a>
-                <a class="md-padded-r-0" href="/contact.html"> Contact </a>
-            </nav>
-
-            <nav class="col-3 show-sm">
-                <div class="hamburger-button"> 
-                    <span class="hamburger-top"></span>
-                    <span class="hamburger-middle"></span>
-                    <span class="hamburger-bottom"></span>
-                </div>
-
-                <div class="mobile-menu"> 
-                    <a href="/index.html"> Home </a>
-                    <a href="/about.html"> About </a>
-                    <a href="/bouquets.html"> Bouquets </a>
-                    <a href="/services.html"> Services </a>
-                    <a href="/contact.html"> Contact </a>
-                </div>
-            </nav>
-        </div>
+        
+        {% include header-nav.html %}
 
     
         <div class="padded-5 col-12 grid-center">
@@ -161,36 +142,22 @@ services:
     <section class="text-center padded-5 hide-sm">
         <h2> Reviews </h2>
         <div class="grid padded-1"> 
-               
-        <!---- First Card ----->
-            <div class="col-4 padded-1">
+
+            {% for item in page.reviews %}
+            
+            <!---- First Card ----->
+            <div class="slider-item text-center">
                 <div class="card-review"> 
-                    <img src="/images/las-flores-co-review-rob.jpg" class="profile">
-                    <p class="author"> Rob </p>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptate atque corrupti dolorum cumque. </p>
+                    <img src="{{item.image}}" class="profile">
+                    <p class="author"> {{item.author}} </p>
+                    <p> {{item.description}} </p>
                     <span> ★ ★ ★ ★ ★</span>
                 </div>
             </div>
-    
-        <!---- Second Card ----->
-            <div class="col-4 padded-1">
-                <div class="card-review"> 
-                    <img src="/images/las-flores-co-review-julie.jpg" class="profile">
-                    <p class="author"> Julie </p>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptate atque corrupti dolorum cumque. </p>
-                    <span> ★ ★ ★ ★ ★</span>
-                </div>
-            </div>
-    
-            <!---- Third Card ----->
-            <div class="col-4 padded-1">
-                <div class="card-review"> 
-                    <img src="/images/las-flores-co-review-jake.jpg" class="profile">
-                    <p class="author"> Jake </p>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptate atque corrupti dolorum cumque. </p>
-                    <span> ★ ★ ★ ★ ★</span>
-                </div>
-            </div>
+
+            {% endfor %}
+
+
         </div>
     </section>
 
