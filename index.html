@@ -53,100 +53,104 @@ services:
   description: Learn to make your own masterpieces
   follow-link: /services.html#workshop
 ---
-    <!----------------------------- Header Banner --------------------------->
 
-    <header class="padded-1 grid tall-100 md-tall-80 bg-image-header">
-        
-        {% include header-nav.html %}
+<!----------------------------- Header Banner --------------------------->
+
+<header class="padded-1 grid tall-100 md-tall-80 bg-image-header">
+
+    {% include header-nav.html %}
     
-        <div class="padded-5 col-12 grid-center">
-            <div class="col-9"> 
-                <div class="text-center md-bg-white"> 
-                    <h3 class="big-text"> Fresh & local </h3>
-                    <h2> We make <span class="light-text"> you </span> and <span class="light-text"> mother earth </span> happy </h2>
-                    <a href="/bouquets.html" class="button"> Subscribe </a>
-                </div>
+    <div class="padded-5 col-12 grid-center">
+        <div class="col-9"> 
+            <div class="text-center md-bg-white"> 
+                <h3 class="big-text"> Fresh & local </h3>
+                <h2> We make <span class="light-text"> you </span> and <span class="light-text"> mother earth </span> happy </h2>
+                <a href="/bouquets.html" class="button"> Subscribe </a>
             </div>
         </div>
-    </header>
+    </div>
+</header>
 
-    <!------------------------------- Call to action ------------------------>
-   <section class="grid-middle text-center padded-5 bg-dark tall-40">
-        <div class="col-12"> 
-            <h2> Stay in Touch</h2>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quod, nesciunt consequatur cupiditate excepturi harum perferendis nulla et tenetur magni! </p>
 
-            <form class="email-signup "action="htps://formspree.io/hello@theflower.co" method="POST">
-                <input type="text" name="name" placeholder="Your First Name">
-                <input type="e-mail" name="_replyto" placeholder="Your Email">
-                <input type="submit" value="Send" class="button">
-            </form>
-        </div>
-    </section>
+<!------------------------------- Call to action ------------------------>
+<section class="grid-middle text-center padded-5 bg-dark tall-40">
+    <div class="col-12"> 
+        <h2> Stay in Touch</h2>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quod, nesciunt consequatur cupiditate excepturi harum perferendis nulla et tenetur magni! </p>
 
-    <!------------------------- Image banner anniversary --------------------------->
-    <section class="padded-5 tall-50 grid-middle bg-image bg-img-anniversary bg-fixed">
-        <!-- one sentence, so better to put it one heading -->
-            <div class="col-9-middle">
-                <h3> 
-                    We are <span class="light-text"> celebrating</span> our one year anniversary. 
-                    <br/> Shop and <span class="light-text"> save 20%</span>. 
-                </h3>
-            </div>
-    </section>
+        <form class="email-signup "action="htps://formspree.io/hello@theflower.co" method="POST">
+            <input type="text" name="name" placeholder="Your First Name">
+            <input type="e-mail" name="_replyto" placeholder="Your Email">
+            <input type="submit" value="Send" class="button">
+        </form>
+    </div>
+</section>
 
-    <!-------------------------------- Gallery  ----------------------------->
+
+<!------------------------- Image banner anniversary --------------------------->
+<section class="padded-5 tall-50 grid-middle bg-image bg-img-anniversary bg-fixed">
+    <!-- one sentence, so better to put it one heading -->
+    <div class="col-9-middle">
+        <h3> 
+            We are <span class="light-text"> celebrating</span> our one year anniversary. 
+            <br/> Shop and <span class="light-text"> save 20%</span>. 
+        </h3>
+    </div>
+</section>
+
+<!-------------------------------- Gallery  ----------------------------->
   
-    <section class="padded-5">
-        <h2 class="tall-10 text-center">Latest Creations</h2>
-        <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi accusantium unde, odio corporis eligendi consequuntur quisquam dignissimos placeat consectetur. Consequuntur fugiat exercitationem mollitia at, sequi minus! Cupiditate vel consequuntur quos!</p>
+<section class="padded-5">
+    <h2 class="tall-10 text-center">Latest Creations</h2>
+    <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi accusantium unde, odio corporis eligendi consequuntur quisquam dignissimos placeat consectetur. Consequuntur fugiat exercitationem mollitia at, sequi minus! Cupiditate vel consequuntur quos!</p>
     
-        <div class="slider-container"> 
+    <div class="slider-container"> 
 
-            {% for item in page.gallery %}
+        {% for item in page.gallery %}
 
-            <div class="slider-item">
-                <div class="bg-image-slider bg-img-gallery-1 {{item.aspect-ratio}}" style="background-image: url('{{item.background_image}}');"> </div>
-                <p class="title"> {{item.name-bouquet}} </p>
-                <p class="caption text-center"> {{item.description}} </p>
-            </div>
+        <div class="slider-item">
+            <div class="bg-image-slider bg-img-gallery-1 {{item.aspect-ratio}}" style="background-image: url('{{item.background_image}}');"> </div>
+            <p class="title"> {{item.name-bouquet}} </p>
+            <p class="caption text-center"> {{item.description}} </p>
+        </div>
 
-            {% endfor %}
+        {% endfor %}
        
-        </div>
+    </div>
         
-        <div class="padded-1 col-12 grid-center">
-            <a href="/bouquets.html" class="text-center button uppercase"> More Bouquets </a>
-        </div>
-    </section> 
+    <div class="padded-1 col-12 grid-center">
+        <a href="/bouquets.html" class="text-center button uppercase"> More Bouquets </a>
+    </div>
+</section> 
 
-    <!------------------------- Testimonial section --------------------------->
-    <section class="padded-5 grid tall-40 sm-tall-10 bg-light"> 
-        <div class="col-1"> 
-            <span class="quote-icon"> &ldquo; </span>
-        </div>
+<!------------------------- Testimonial section --------------------------->
+<section class="padded-5 grid tall-40 sm-tall-10 bg-light"> 
+    <div class="col-1"> 
+        <span class="quote-icon"> &ldquo; </span>
+    </div>
 
-        <div class="col-10-middle"> 
-            <p class="medium-text font-weight-light text-center"> <span class="bold-text"> A-MAZING </span> </br> Their bouquets are wonderful. They smell like heaven and they last so long. <span class="hide-sm">Also, their team is super kind and always so helpfull.  </span> </p>
-            <p class="subtitle text-right white-text padded-r-1"> - A very happy customer </p>
-        </div>
-        <div class="col-1"> 
-            <span class="quote-icon"> &rdquo; </span>
-        </div>
-    </section>
+    <div class="col-10-middle"> 
+        <p class="medium-text font-weight-light text-center"> <span class="bold-text"> A-MAZING </span> </br> Their bouquets are wonderful. They smell like heaven and they last so long. <span class="hide-sm">Also, their team is super kind and always so helpfull.  </span> </p>
+        <p class="subtitle text-right white-text padded-r-1"> - A very happy customer </p>
+    </div>
+
+    <div class="col-1"> 
+        <span class="quote-icon"> &rdquo; </span>
+    </div>
+</section>
 
    
 
-    <!------------------------------- Services  ----------------------------->
-    <section class="padded-5 text-center bg-white">
+<!------------------------------- Services  ----------------------------->
+<section class="padded-5 text-center bg-white">
 
-        <h2> Our Services </h2>
+    <h2> Our Services </h2>
         
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati provident, fugit ipsa magnam nihil velit eius maiores excepturi aut nostrum suscipit officiis voluptatum alias ipsam. </p>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati provident, fugit ipsa magnam nihil velit eius maiores excepturi aut nostrum suscipit officiis voluptatum alias ipsam. </p>
         
-        <div class="grid-equalHeight padded-1"> 
+    <div class="grid-equalHeight padded-1"> 
             
-            {% for item in page.services %}
+        {% for item in page.services %}
 
             <div class="padded-05 {{item.column-size}}"> 
                 <a href="{{item.follow-link}}" class="clickable-box bg-image" style="background-image: url('{{item.background_image}}');"> 

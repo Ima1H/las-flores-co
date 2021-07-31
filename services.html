@@ -30,194 +30,195 @@ reviews:
   background_image: /images/las-flores-co-review-julie.jpg
 - author: Jake
   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptate atque corrupti dolorum cumque.
-  ibackground_image: /images/las-flores-co-review-jake.jpg
+  background_image: /images/las-flores-co-review-jake.jpg
 ---
 
 
-    <!----------------------------- Header Banner --------------------------->
+<!----------------------------- Header Banner --------------------------->
 
-    <header class="padded-1 grid tall-100 md-tall-80 bg-image-header">
-        
-        {% include header-nav.html %}
+<header class="padded-1 grid tall-100 md-tall-80 bg-image-header">
+      
+    {% include header-nav.html %}
 
     
-        <div class="padded-5 col-12 grid-center">
-            <div class="col-9"> 
-                <div class="text-center md-bg-white">
-                    <h3 class="big-text"> Your bouquet, </h3>
-                    <h2> how and when <span class="light-text">you</span> want them</h2>
-                    <a href="/bouquets.html" class="button"> Subscribe </a>
-                </div>
+    <div class="padded-5 col-12 grid-center">
+        <div class="col-9"> 
+            <div class="text-center md-bg-white">
+                <h3 class="big-text"> Your bouquet, </h3>
+                <h2> how and when <span class="light-text">you</span> want them</h2>
+                <a href="/bouquets.html" class="button"> Subscribe </a>
             </div>
         </div>
-    </header>
+    </div>
+</header>
 
 
-   <!------------------------------- Services  ----------------------------->
-   <section class="padded-5 text-center bg-white">
+<!------------------------------- Services  ----------------------------->
+<section class="padded-5 text-center bg-white">
 
     <h2> Our Services </h2>
-    
+        
     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati provident, fugit ipsa magnam nihil velit eius maiores excepturi aut nostrum suscipit officiis voluptatum alias ipsam. </p>
+        
+    <div class="grid-equalHeight padded-1"> 
+                
+        {% for item in page.services %}
+        <div class="padded-05 {{item.column-size}}"> 
+            <a href="{{item.follow-link}}" class="clickable-box bg-image" style="background-image: url('{{item.background_image}}');"> 
+                <div class="overlay padded-5"> 
+                    <h3> {{item.name-service}}  </h3>
+                    <p> {{item.description}}  </p>
+                </div>
+            </a>
+        </div>
+
+        {% endfor %}
+    </div> 
+</section>
+
+
+<!-------------------------------- Subscription Image Banner  ------------------------------>
+<section id="subscription" class="padded-5 text-center tall-80 grid-center bg-image bg-img-subscription-banner">
+    <div class="col-9-top white-text">
+        <h3> A subscription that truly sparks joy. </h3>
+        <h2>Subscribe and save up to $6 per bouquet </h2>
+    </div>
+
+    <div class=" col-12-bottom">
+        <a href="#subscribe-how">
+            <i class="down fas fa-chevron-circle-down"></i>
+        </a>
+    </div>
+</section>
+
+
+<!-------------------------------- Subscription How it works  ------------------------------>
+<section id="subscribe-how" class="padded-5 text-center">
+    <h2> How to start your subscription </h2>
     
-        <div class="grid-equalHeight padded-1"> 
-            
-            {% for item in page.services %}
-
-            <div class="padded-05 {{item.column-size}}"> 
-                <a href="{{item.follow-link}}" class="clickable-box bg-image" style="background-image: url('{{item.background_image}}');"> 
-                    <div class="overlay padded-5"> 
-                        <h3> {{item.name-service}}  </h3>
-                        <p> {{item.description}}  </p>
-                    </div>
-                </a>
-            </div>
-
-            {% endfor %}
-        </div> 
-    </section>
-
-    <!-------------------------------- Subscription Image Banner  ------------------------------>
-    <section id="subscription" class="padded-5 text-center tall-80 grid-center bg-image bg-img-subscription-banner">
-            <div class="col-9-top white-text">
-                <h3> A subscription that truly sparks joy. </h3>
-                <h2>Subscribe and save up to $6 per bouquet </h2>
-            </div>
-
-            <div class=" col-12-bottom">
-                <a href="#subscribe-how">
-                    <i class="down fas fa-chevron-circle-down"></i>
-                </a>
-            </div>
-        </section>
-
-    <!-------------------------------- Subscription How it works  ------------------------------>
-    <section id="subscribe-how" class="padded-5 text-center">
-        <h2> How to start your subscription </h2>
-        <div class="grid padded-1">
-          <div class="col-4_sm-12 padded-1">
+    <div class="grid padded-1">
+        <div class="col-4_sm-12 padded-1">
             <i class="icon fas fa-fan"></i>
             <h4> Pick your bouquet </h4>
             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-          </div>
+        </div>
 
-          <div class="col-4_sm-12 padded-1">
+        <div class="col-4_sm-12 padded-1">
             <i class="icon fas fa-calendar-check"></i>
             <h4> Choose how often and when </h4>
             <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-           
-          <div class="col-4_sm-12 padded-1">
+        </div>
+            
+        <div class="col-4_sm-12 padded-1">
             <i class="icon fas fa-user-circle"></i>
             <h4> Arrange your magical bouquet with your account </h4>
             <p>Irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-          </div>
         </div>
+    </div>
 
-        <a href="/bouquets.html" class="button"> Pick your bouquet</a>
-      </section>
+    <a href="/bouquets.html" class="button"> Pick your bouquet</a>
+</section>
        
 
-    <!-------------------------------- Home Delivery Image Banner  ------------------------------>
-    <section id="delivery" class="padded-5 tall-100 grid-center-middle bg-image bg-img-delivery-banner bg-fixed hide-xs">
+<!-------------------------------- Home Delivery Image Banner  ------------------------------>
+<section id="delivery" class="padded-5 tall-100 grid-center-middle bg-image bg-img-delivery-banner bg-fixed hide-xs">
     <!-- one sentence, so better to put it one heading -->
-        <div class="col-12-middle">
-            <h3> No time to come visit our store? </h3>
-            <h2> We <span class="light-text">deliver</span> at home for <span class="light-text">free </span></h2>  
-            <a href="/bouquets.html" class="button"> Pick your bouquet for delivery </a>
-        </div>
-    </section>
+    <div class="col-12-middle">
+        <h3> No time to come visit our store? </h3>
+        <h2> We <span class="light-text">deliver</span> at home for <span class="light-text">free </span></h2>  
+        <a href="/bouquets.html" class="button"> Pick your bouquet for delivery </a>
+    </div>
+</section>
 
-    <section id="delivery" class="padded-5 tall-50 grid-center-middle bg-image bg-img-delivery-banner-mobile bg-fixed show-xs">
-        <!-- one sentence, so better to put it one heading -->
-        <div class="col-12-middle xs-bg-white text-center">
-            <h3> No time to come visit our store? </h3>
-            <h2> We <span class="light-text">deliver</span> at home for <span class="light-text">free </span></h2>  
-            <a href="/bouquets.html" class="button"> Pick your bouquet for delivery </a>
-        </div>
-    </section>
+<section id="delivery" class="padded-5 tall-50 grid-center-middle bg-image bg-img-delivery-banner-mobile bg-fixed show-xs">
+    <!-- one sentence, so better to put it one heading -->
+    <div class="col-12-middle xs-bg-white text-center">
+        <h3> No time to come visit our store? </h3>
+        <h2> We <span class="light-text">deliver</span> at home for <span class="light-text">free </span></h2>  
+        <a href="/bouquets.html" class="button"> Pick your bouquet for delivery </a>
+    </div>
+</section>
 
                
-    <!-------------------------------- Reviews  ------------------------------>
-    <section class="text-center padded-5 hide-sm">
-        <h2> Reviews </h2>
+<!-------------------------------- Reviews  ------------------------------>
+<section class="text-center padded-5 hide-sm">
+    <h2> Reviews </h2>
         <div class="grid padded-1"> 
 
-            {% for item in page.reviews %}
+        {% for item in page.reviews %}
             
-            <!---- First Card ----->
-            <div class="slider-item text-center">
-                <div class="card-review"> 
-                    <img src="{{item.background_image}}" class="profile">
-                    <p class="author"> {{item.author}} </p>
-                    <p> {{item.description}} </p>
-                    <span> ★ ★ ★ ★ ★</span>
-                </div>
+        <!---- First Card ----->
+        <div class="slider-item text-center">
+            <div class="card-review"> 
+                <img src="{{item.background_image}}" class="profile">
+                <p class="author"> {{item.author}} </p>
+                <p> {{item.description}} </p>
+                <span> ★ ★ ★ ★ ★</span>
             </div>
-
-            {% endfor %}
-
-
-        </div>
-    </section>
-
-    <!-------------------------------- Workshop banner  ------------------------------>
-    <section id="workshop" class="padded-5 text-center tall-40 grid-center-middle bg-light">
-        <!-- one sentence, so better to put it one heading -->
-            <div class="col-12-middle">
-                <h3> Always dreamed of making your own beautiful bouquets?</h3>
-                <h2> Join our <span class="dark-text"> workshops </span> </h2>  
-            </div>
-
-            <div class="col-12-bottom">
-                <a href="#workshops-explained"><i class="down fas fa-chevron-circle-down"></i></a>
-            </div>
-        </section>
-
-    <!-------------------------------- Workshops ------------------------------>
-    <section id="workshops-explained" class="grid">
-        <div class="padded-5 col-8_xs-12-middle tall-40">
-            <h2> Beginner workshops</h2>
-            <p>We start of with the principles of designing an arrangement. At the end of the workshop you are able to make your own magical bouquet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae fugit omnis voluptatum esse laboriosam voluptate minima totam facilis, soluta officia eaque obcaecati quis, nisi saepe sit sunt quo ipsa suscipit?</p>
-            <p class="medium-text"> $45 for the entire workshop </p>
-            <a href="/contact.html#contact" class="button"> Contact us to make reservation </a>
         </div>
 
-        <div class="bg-image bg-img-workshop-beginner col-4_xs-12 tall-40"> </div>
+        {% endfor %}
+ 
+    </div>
+</section>
 
-        <div class="bg-image bg-img-workshop-intermediate col-4_xs-12 tall-40 hide-xs"> </div>
+<!-------------------------------- Workshop banner  ------------------------------>
+<section id="workshop" class="padded-5 text-center tall-40 grid-center-middle bg-light">
+    <!-- one sentence, so better to put it one heading -->
+    <div class="col-12-middle">
+        <h3> Always dreamed of making your own beautiful bouquets?</h3>
+        <h2> Join our <span class="dark-text"> workshops </span> </h2>  
+    </div>
+
+    <div class="col-12-bottom">
+        <a href="#workshops-explained"><i class="down fas fa-chevron-circle-down"></i></a>
+    </div>
+</section>
+
+
+<!-------------------------------- Workshops ------------------------------>
+<section id="workshops-explained" class="grid">
+    <div class="padded-5 col-8_xs-12-middle tall-40">
+        <h2> Beginner workshops</h2>
+        <p>We start of with the principles of designing an arrangement. At the end of the workshop you are able to make your own magical bouquet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae fugit omnis voluptatum esse laboriosam voluptate minima totam facilis, soluta officia eaque obcaecati quis, nisi saepe sit sunt quo ipsa suscipit?</p>
+        <p class="medium-text"> $45 for the entire workshop </p>
+        <a href="/contact.html#contact" class="button"> Contact us to make reservation </a>
+    </div>
+
+    <div class="bg-image bg-img-workshop-beginner col-4_xs-12 tall-40"> </div>
+
+    <div class="bg-image bg-img-workshop-intermediate col-4_xs-12 tall-40 hide-xs"> </div>
         
-        <div class="padded-5 col-8_xs-12-middle tall-40 bg-dark">
-            <h2> Intermediate workshops </h2>
-            <p> Learn to make more specific arrengements that stand out in a room or place. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae fugit omnis voluptatum esse laboriosam voluptate minima totam facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, eligendi totam dolorum est et quo necessitatibus, porro vel, velit delectus inventore sit repellendus sapiente optio non nisi neque quaerat consequatur!</p>
-            <p class="medium-text"> $60 for the entire workshop </p>
-            <a href="/contact.html#contact" class="button"> Contact us to make reservation </a>
-        </div>
+    <div class="padded-5 col-8_xs-12-middle tall-40 bg-dark">
+        <h2> Intermediate workshops </h2>
+        <p> Learn to make more specific arrengements that stand out in a room or place. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae fugit omnis voluptatum esse laboriosam voluptate minima totam facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, eligendi totam dolorum est et quo necessitatibus, porro vel, velit delectus inventore sit repellendus sapiente optio non nisi neque quaerat consequatur!</p>
+        <p class="medium-text"> $60 for the entire workshop </p>
+        <a href="/contact.html#contact" class="button"> Contact us to make reservation </a>
+    </div>
 
-        <div class="bg-image bg-img-workshop-intermediate col-4_xs-12 tall-40 show-xs"> </div>
-        
-        
-        <div class="padded-5 col_xs-12-8-middle tall-40">
-            <h2> Advanced workshops </h2>
-            <p> In our advanced workshops you will learn to make bouquets for special occasions, like weddings, with an extra touch of magic. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae fugit omnis voluptatum esse laboriosam voluptate minima totam facilis, soluta officia eaque obcaecati quis, nisi saepe sit sunt quo ipsa suscipit?</p>
-            <p class="medium-text"> $90 for the entire workshop</p>
-            <a href="/contact.html#contact" class="button"> Contact us to make reservation </a>
-        </div>
+    <div class="bg-image bg-img-workshop-intermediate col-4_xs-12 tall-40 show-xs"> </div>
+                
+    <div class="padded-5 col_xs-12-8-middle tall-40">
+        <h2> Advanced workshops </h2>
+        <p> In our advanced workshops you will learn to make bouquets for special occasions, like weddings, with an extra touch of magic. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae fugit omnis voluptatum esse laboriosam voluptate minima totam facilis, soluta officia eaque obcaecati quis, nisi saepe sit sunt quo ipsa suscipit?</p>
+        <p class="medium-text"> $90 for the entire workshop</p>
+        <a href="/contact.html#contact" class="button"> Contact us to make reservation </a>
+    </div>
 
-        <div class="bg-image bg-img-workshop-advanced col-4_xs-12 tall-40"> </div>
+    <div class="bg-image bg-img-workshop-advanced col-4_xs-12 tall-40"> </div>
 
-    </section>
+</section>
 
-    <!------------------------------- Call to action ------------------------>
-    <section class="grid-middle text-center padded-5 bg-light tall-40">
-        <div class="col-12"> 
-            <h2> Stay in Touch</h2>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quod, nesciunt consequatur cupiditate excepturi harum perferendis nulla et tenetur magni! </p>
+<!------------------------------- Call to action ------------------------>
+<section class="grid-middle text-center padded-5 bg-light tall-40">
+    <div class="col-12"> 
+        <h2> Stay in Touch</h2>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quod, nesciunt consequatur cupiditate excepturi harum perferendis nulla et tenetur magni! </p>
 
-            <form class="email-signup "action="htps://formspree.io/hello@theflower.co" method="POST">
-                <input type="text" name="name" placeholder="Your First Name">
-                <input type="e-mail" name="_replyto" placeholder="Your Email">
-                <input type="submit" value="Send" class="button">
-            </form>
-        </div>
-    </section>
+        <form class="email-signup "action="htps://formspree.io/hello@theflower.co" method="POST">
+            <input type="text" name="name" placeholder="Your First Name">
+            <input type="e-mail" name="_replyto" placeholder="Your Email">
+            <input type="submit" value="Send" class="button">
+        </form>
+    </div>
+</section>
