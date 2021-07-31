@@ -723,6 +723,17 @@ form .button {
     margin-bottom: 2rem;
 }
 
+/* Bouquet - gallery */
+
+/* Background of gallery when active */
+.lg-backdrop {
+    background-color: rgb(20,20,20);
+}
+
+.lg-backdrop.in{
+    opacity: 0.9;
+}
+
 /* Services - subscription */ 
 
 .icon {

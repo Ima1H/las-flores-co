@@ -54,3 +54,9 @@ $( document ).ready(function() {
   //Animate on scroll activate
   AOS.init();
 });
+
+lightGallery(document.getElementById('lightgallery'), {
+  speed: 500,
+  download: false
+  
+});
