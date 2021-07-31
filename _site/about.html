@@ -28,6 +28,16 @@
 <!--- Slick theme that handles the way everything slides. Optional but very helpful --->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+<!-- Animate on scroll -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!-- CSS3 Animation bouncing arrow down (linear move)  -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CSS3 Animation - Bouncing arrow down (linear move)</title>
+<link href="style.css" rel="stylesheet">
+
 <!-- This is our css stylesheet, this always goes last -->
 <link rel="stylesheet" href="styles.css" />
 
@@ -39,7 +49,7 @@
 
         <!----------------------------- Header Banner --------------------------->
 
-    <header class="padded-1 grid tall-100 md-tall-80 bg-image-header">
+    <header class="padded-1 grid tall-80 bg-image-header">
         
         <div class="col-12-top grid">
     <div class="col-4_md-12-middle md-text-center sm-text-left"> 
@@ -76,9 +86,9 @@
         <div class="padded-5 col-12 grid-center">
             <div class="col-9"> 
                 <div class="text-center md-bg-white">
-                    <h3 class="big-text"> Creating lasting memories </h3>
-                    <h2> while keeping <span class="light-text">mother earth happy </span> </h2> 
-                    <a href="/bouquets.html" class="button"> Subscribe </a>
+                    <h3 class="big-text" data-aos="fade-up" data-aos-duration="1000"> Creating lasting memories </h3>
+                    <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"> while keeping <span class="light-text">mother earth happy </span> </h2> 
+                    <a href="/bouquets.html" class="button" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"> Subscribe </a>
                 </div>
             </div>
         </div>
@@ -160,36 +170,44 @@
 
     <!----------------------  Features section -------------------->
     <section class="grid">
-        <div class="padded-5 col-7_md-12-middle tall-30">
-            <h2> We use a <span class="light-text"> sustainable </span> crop protection approach. No harmful residues for us. </h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae fugit omnis voluptatum esse laboriosam voluptate minima totam facilis, soluta officia eaque obcaecati quis, nisi saepe sit sunt quo ipsa suscipit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eaque cupiditate hic deserunt quam omnis consequuntur vitae aliquid iste dolorem natus deleniti corporis corrupti impedit repellat, ut nemo id eligendi?</p>
-            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat quia atque ratione dolor sint natus, libero necessitatibus aliquid officiis sed. Unde perspiciatis ratione optio, distinctio magni voluptate doloribus tenetur cupiditate.</p>
+        <div class="padded-5 col-7_md-12-middle tall-50">
+            <div data-aos="fade-right" data-aos-duration="1000"> 
+                <h2> We use a <span class="light-text"> sustainable </span> crop protection approach. No harmful residues for us. </h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae fugit omnis voluptatum esse laboriosam voluptate minima totam facilis, soluta officia eaque obcaecati quis, nisi saepe sit sunt quo ipsa suscipit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eaque cupiditate hic deserunt quam omnis consequuntur vitae aliquid iste dolorem natus deleniti corporis corrupti impedit repellat, ut nemo id eligendi?</p>
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat quia atque ratione dolor sint natus, libero necessitatibus aliquid officiis sed. Unde perspiciatis ratione optio, distinctio magni voluptate doloribus tenetur cupiditate.</p>
+            </div>
         </div>
 
-        <div class="bg-image bg-img-about-crop-protection col-5_md-12 tall-30"> </div>
+        <div class="bg-image bg-img-about-crop-protection col-5_md-12 tall-50"> </div>
 
-        <div class="bg-image bg-img-about-strong col-5 tall-30 hide-md"> </div>
+        <div class="bg-image bg-img-about-strong col-5 tall-50 hide-md"> </div>
         
-        <div class="padded-5 col-7_md-12-middle tall-30 bg-dark">
-            <h2> We only choose the most  <span class="light-text"> beautiful </span> and <span class="light-text"> strong </span> flowers </h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae fugit omnis voluptatum esse laboriosam voluptate minima totam facilis. Soluta officia obcaecati quis nisi saepe sit sunt quo ipsa suscipit? Quae fugit omnis voluptatum esse laboriosam voluptate minima totam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, libero. Porro dicta laudantium veritatis veniam modi nobis sit. Soluta facere harum optio error eos blanditiis laudantium neque quia quos suscipit.</p>
+        <div class="padded-5 col-7_md-12-middle tall-50 bg-dark">
+            <div data-aos="fade-left" data-aos-duration="1000"> 
+                <h2> We only choose the most  <span class="light-text"> beautiful </span> and <span class="light-text"> strong </span> flowers </h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae fugit omnis voluptatum esse laboriosam voluptate minima totam facilis. Soluta officia obcaecati quis nisi saepe sit sunt quo ipsa suscipit? Quae fugit omnis voluptatum esse laboriosam voluptate minima totam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, libero. Porro dicta laudantium veritatis veniam modi nobis sit. Soluta facere harum optio error eos blanditiis laudantium neque quia quos suscipit.</p>
+            </div>
         </div>
         
 
-        <div class="padded-5 col-7_md-12-middle tall-30">
-            <h2> Our flowers come from <span class="light-text"> local  </span> and <span class="light-text"> fair </span>  farmers </span></h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae fugit omnis voluptatum esse laboriosam voluptate minima totam facilis, soluta officia eaque obcaecati quis, nisi saepe sit sunt quo ipsa suscipit?</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio expedita, iste labore sapiente est commodi odit facilis laborum ex doloremque ullam similique laudantium quam impedit delectus dolorum, consequatur minima explicabo? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi architecto delectus sit alias voluptatibus repellat? Ea vitae dolorem iusto quaerat omnis, recusandae officiis nihil error. Quas, soluta! Tempore, incidunt officia.</p>
+        <div class="padded-5 col-7_md-12-middle tall-50"">
+            <div data-aos="fade-right" data-aos-duration="1000">
+                <h2> Our flowers come from <span class="light-text"> local  </span> and <span class="light-text"> fair </span>  farmers </span></h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae fugit omnis voluptatum esse laboriosam voluptate minima totam facilis, soluta officia eaque obcaecati quis, nisi saepe sit sunt quo ipsa suscipit?</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio expedita, iste labore sapiente est commodi odit facilis laborum ex doloremque ullam similique laudantium quam impedit delectus dolorum, consequatur minima explicabo? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi architecto delectus sit alias voluptatibus repellat? Ea vitae dolorem iusto quaerat omnis, recusandae officiis nihil error. Quas, soluta! Tempore, incidunt officia.</p>
+            </div>
         </div>
 
-        <div class="bg-image bg-img-about-farmer col-5_md-12 tall-30"> </div>
+        <div class="bg-image bg-img-about-farmer col-5_md-12 tall-50"> </div>
 
-        <div class="bg-image bg-img-about-climate-nuteral col-5_md-12 tall-30 hide-md"> </div>
+        <div class="bg-image bg-img-about-climate-nuteral col-5_md-12 tall-50 hide-md"> </div>
         
-        <div class="padded-5 col-7_md-12-middle tall-30 bg-dark">
-            <h2> We are proud to be <span class="light-text"> 100%  climate neutral </span> </h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae fugit omnis voluptatum esse laboriosam voluptate minima totam facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ea repellendus eligendi ab voluptatem consequatur at provident, eos maiores, illum enim, et officia pariatur. Sequi repellat quaerat ipsum provident illum. </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ea repellendus eligendi ab voluptatem consequatur at provident, eos maiores, illum enim, et officia pariatur. Sequi repellat quaerat ipsum provident illum.</p>
+        <div class="padded-5 col-7_md-12-middle tall-50 bg-dark">
+            <div data-aos="fade-left" data-aos-duration="1000"> 
+                <h2> We are proud to be <span class="light-text"> 100%  climate neutral </span> </h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae fugit omnis voluptatum esse laboriosam voluptate minima totam facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ea repellendus eligendi ab voluptatem consequatur at provident, eos maiores, illum enim, et officia pariatur. Sequi repellat quaerat ipsum provident illum. </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ea repellendus eligendi ab voluptatem consequatur at provident, eos maiores, illum enim, et officia pariatur. Sequi repellat quaerat ipsum provident illum.</p>
+            </div>
         </div>
         
 
@@ -450,6 +468,10 @@
 
    <!--------------------- Add jQuery -------------------->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!------------------ Animate on scroll ---------------->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 
     <!-------------- custom javascript files -------------->
     <script src="/scripts.js"></script> 

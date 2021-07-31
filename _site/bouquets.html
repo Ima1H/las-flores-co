@@ -28,6 +28,16 @@
 <!--- Slick theme that handles the way everything slides. Optional but very helpful --->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+<!-- Animate on scroll -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!-- CSS3 Animation bouncing arrow down (linear move)  -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CSS3 Animation - Bouncing arrow down (linear move)</title>
+<link href="style.css" rel="stylesheet">
+
 <!-- This is our css stylesheet, this always goes last -->
 <link rel="stylesheet" href="styles.css" />
 
@@ -76,9 +86,9 @@
         <div class="padded-5 col-12 grid-center">
             <div class="col-12"> 
                 <div class="text-center md-bg-white">
-                    <h3 class="big-text"> Get your <span class="light-text"> fresh & local </span> flowers now </h3>
-                    <h2> Subscribe and <span> save up to $6 per bouquet </span> </h2>
-                    <a href="/bouquets.html" class="button"> Subscribe </a>
+                    <h3 class="big-text" data-aos="fade-up" data-aos-duration="1000"> Get your fresh & local flowers now </h3>
+                    <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"> Subscribe and <span class="light-text"> save up to $6 </span> per bouquet  </h2>
+                    <a href="/bouquets.html" class="button" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"> Subscribe </a>
                 </div>
             </div>
         </div>
@@ -362,6 +372,10 @@
 
    <!--------------------- Add jQuery -------------------->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!------------------ Animate on scroll ---------------->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 
     <!-------------- custom javascript files -------------->
     <script src="/scripts.js"></script> 

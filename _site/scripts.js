@@ -50,4 +50,7 @@ $( document ).ready(function() {
     pauseOnHover: true,    // When true means the autoplay pauses when hovering
     pauseOnDotsHover: true // Pauses the autoplay when hovering over the dots
   });
+
+  //Animate on scroll activate
+  AOS.init();
 });

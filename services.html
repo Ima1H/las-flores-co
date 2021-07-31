@@ -39,7 +39,7 @@ reviews:
 
 <!----------------------------- Header Banner --------------------------->
 
-<header class="padded-1 grid tall-100 md-tall-80 bg-image-header">
+<header class="padded-1 grid tall-80 bg-image-header">
       
     {% include header-nav.html %}
 
@@ -47,9 +47,9 @@ reviews:
     <div class="padded-5 col-12 grid-center">
         <div class="col-9"> 
             <div class="text-center md-bg-white">
-                <h3 class="big-text"> Your bouquet, </h3>
-                <h2> how and when <span class="light-text">you</span> want them</h2>
-                <a href="/bouquets.html" class="button"> Subscribe </a>
+                <h3 class="big-text" data-aos="fade-up" data-aos-duration="1000"> Your bouquet, </h3>
+                <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"> how and when <span class="light-text">you</span> want them</h2>
+                <a href="/bouquets.html" class="button" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"> Subscribe </a>
             </div>
         </div>
     </div>
@@ -84,11 +84,11 @@ reviews:
 <section id="subscription" class="padded-5 text-center tall-80 grid-center bg-image bg-img-subscription-banner">
     <div class="col-9-top white-text">
         <h3> A subscription that truly sparks joy. </h3>
-        <h2>Subscribe and save up to $6 per bouquet </h2>
+        <h2 data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">Subscribe and save up to $6 per bouquet </h2>
     </div>
 
-    <div class=" col-12-bottom">
-        <a href="#subscribe-how">
+    <div class=" col-12-bottom arrow-container">
+        <a href="#subscribe-how" class="arrow-down">
             <i class="down fas fa-chevron-circle-down"></i>
         </a>
     </div>
@@ -173,8 +173,10 @@ reviews:
         <h2> Join our <span class="dark-text"> workshops </span> </h2>  
     </div>
 
-    <div class="col-12-bottom">
-        <a href="#workshops-explained"><i class="down fas fa-chevron-circle-down"></i></a>
+    <div class="col-12-bottom arrow-container">
+        <a href="#workshops-explained" class="arrow-down">
+            <i class="down fas fa-chevron-circle-down"></i>
+        </a>
     </div>
 </section>
 
@@ -182,10 +184,12 @@ reviews:
 <!-------------------------------- Workshops ------------------------------>
 <section id="workshops-explained" class="grid">
     <div class="padded-5 col-8_xs-12-middle tall-40">
-        <h2> Beginner workshops</h2>
-        <p>We start of with the principles of designing an arrangement. At the end of the workshop you are able to make your own magical bouquet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae fugit omnis voluptatum esse laboriosam voluptate minima totam facilis, soluta officia eaque obcaecati quis, nisi saepe sit sunt quo ipsa suscipit?</p>
-        <p class="medium-text"> $45 for the entire workshop </p>
-        <a href="/contact.html#contact" class="button"> Contact us to make reservation </a>
+        <div data-aos="fade-right" data-aos-duration="1000"> 
+            <h2> Beginner workshops</h2>
+            <p>We start of with the principles of designing an arrangement. At the end of the workshop you are able to make your own magical bouquet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae fugit omnis voluptatum esse laboriosam voluptate minima totam facilis, soluta officia eaque obcaecati quis, nisi saepe sit sunt quo ipsa suscipit?</p>
+            <p class="medium-text"> $45 for the entire workshop </p>
+            <a href="/contact.html#contact" class="button"> Contact us to make reservation </a>
+        </div>
     </div>
 
     <div class="bg-image bg-img-workshop-beginner col-4_xs-12 tall-40"> </div>
@@ -193,19 +197,23 @@ reviews:
     <div class="bg-image bg-img-workshop-intermediate col-4_xs-12 tall-40 hide-xs"> </div>
         
     <div class="padded-5 col-8_xs-12-middle tall-40 bg-dark">
-        <h2> Intermediate workshops </h2>
-        <p> Learn to make more specific arrengements that stand out in a room or place. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae fugit omnis voluptatum esse laboriosam voluptate minima totam facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, eligendi totam dolorum est et quo necessitatibus, porro vel, velit delectus inventore sit repellendus sapiente optio non nisi neque quaerat consequatur!</p>
-        <p class="medium-text"> $60 for the entire workshop </p>
-        <a href="/contact.html#contact" class="button"> Contact us to make reservation </a>
+        <div data-aos="fade-left" data-aos-duration="1000">
+            <h2> Intermediate workshops </h2>
+            <p> Learn to make more specific arrengements that stand out in a room or place. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae fugit omnis voluptatum esse laboriosam voluptate minima totam facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, eligendi totam dolorum est et quo necessitatibus, porro vel, velit delectus inventore sit repellendus sapiente optio non nisi neque quaerat consequatur!</p>
+            <p class="medium-text"> $60 for the entire workshop </p>
+            <a href="/contact.html#contact" class="button"> Contact us to make reservation </a>
+        </div>
     </div>
 
     <div class="bg-image bg-img-workshop-intermediate col-4_xs-12 tall-40 show-xs"> </div>
                 
     <div class="padded-5 col_xs-12-8-middle tall-40">
-        <h2> Advanced workshops </h2>
-        <p> In our advanced workshops you will learn to make bouquets for special occasions, like weddings, with an extra touch of magic. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae fugit omnis voluptatum esse laboriosam voluptate minima totam facilis, soluta officia eaque obcaecati quis, nisi saepe sit sunt quo ipsa suscipit?</p>
-        <p class="medium-text"> $90 for the entire workshop</p>
-        <a href="/contact.html#contact" class="button"> Contact us to make reservation </a>
+        <div data-aos="fade-left" data-aos-duration="1000">
+            <h2> Advanced workshops </h2>
+            <p> In our advanced workshops you will learn to make bouquets for special occasions, like weddings, with an extra touch of magic. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae fugit omnis voluptatum esse laboriosam voluptate minima totam facilis, soluta officia eaque obcaecati quis, nisi saepe sit sunt quo ipsa suscipit?</p>
+            <p class="medium-text"> $90 for the entire workshop</p>
+            <a href="/contact.html#contact" class="button"> Contact us to make reservation </a>
+        </div>
     </div>
 
     <div class="bg-image bg-img-workshop-advanced col-4_xs-12 tall-40"> </div>

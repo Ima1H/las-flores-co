@@ -28,6 +28,16 @@
 <!--- Slick theme that handles the way everything slides. Optional but very helpful --->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+<!-- Animate on scroll -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!-- CSS3 Animation bouncing arrow down (linear move)  -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CSS3 Animation - Bouncing arrow down (linear move)</title>
+<link href="style.css" rel="stylesheet">
+
 <!-- This is our css stylesheet, this always goes last -->
 <link rel="stylesheet" href="styles.css" />
 
@@ -39,7 +49,7 @@
 
     <!----------------------------- Header Banner --------------------------->
 
-<header class="padded-1 grid tall-100 md-tall-80 bg-image-header">
+<header class="padded-1 grid tall-80 bg-image-header">
       
     <div class="col-12-top grid">
     <div class="col-4_md-12-middle md-text-center sm-text-left"> 
@@ -77,9 +87,9 @@
     <div class="padded-5 col-12 grid-center">
         <div class="col-9"> 
             <div class="text-center md-bg-white">
-                <h3 class="big-text"> Your bouquet, </h3>
-                <h2> how and when <span class="light-text">you</span> want them</h2>
-                <a href="/bouquets.html" class="button"> Subscribe </a>
+                <h3 class="big-text" data-aos="fade-up" data-aos-duration="1000"> Your bouquet, </h3>
+                <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"> how and when <span class="light-text">you</span> want them</h2>
+                <a href="/bouquets.html" class="button" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"> Subscribe </a>
             </div>
         </div>
     </div>
@@ -144,11 +154,11 @@
 <section id="subscription" class="padded-5 text-center tall-80 grid-center bg-image bg-img-subscription-banner">
     <div class="col-9-top white-text">
         <h3> A subscription that truly sparks joy. </h3>
-        <h2>Subscribe and save up to $6 per bouquet </h2>
+        <h2 data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">Subscribe and save up to $6 per bouquet </h2>
     </div>
 
-    <div class=" col-12-bottom">
-        <a href="#subscribe-how">
+    <div class=" col-12-bottom arrow-container">
+        <a href="#subscribe-how" class="arrow-down">
             <i class="down fas fa-chevron-circle-down"></i>
         </a>
     </div>
@@ -257,8 +267,10 @@
         <h2> Join our <span class="dark-text"> workshops </span> </h2>  
     </div>
 
-    <div class="col-12-bottom">
-        <a href="#workshops-explained"><i class="down fas fa-chevron-circle-down"></i></a>
+    <div class="col-12-bottom arrow-container">
+        <a href="#workshops-explained" class="arrow-down">
+            <i class="down fas fa-chevron-circle-down"></i>
+        </a>
     </div>
 </section>
 
@@ -266,10 +278,12 @@
 <!-------------------------------- Workshops ------------------------------>
 <section id="workshops-explained" class="grid">
     <div class="padded-5 col-8_xs-12-middle tall-40">
-        <h2> Beginner workshops</h2>
-        <p>We start of with the principles of designing an arrangement. At the end of the workshop you are able to make your own magical bouquet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae fugit omnis voluptatum esse laboriosam voluptate minima totam facilis, soluta officia eaque obcaecati quis, nisi saepe sit sunt quo ipsa suscipit?</p>
-        <p class="medium-text"> $45 for the entire workshop </p>
-        <a href="/contact.html#contact" class="button"> Contact us to make reservation </a>
+        <div data-aos="fade-right" data-aos-duration="1000"> 
+            <h2> Beginner workshops</h2>
+            <p>We start of with the principles of designing an arrangement. At the end of the workshop you are able to make your own magical bouquet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae fugit omnis voluptatum esse laboriosam voluptate minima totam facilis, soluta officia eaque obcaecati quis, nisi saepe sit sunt quo ipsa suscipit?</p>
+            <p class="medium-text"> $45 for the entire workshop </p>
+            <a href="/contact.html#contact" class="button"> Contact us to make reservation </a>
+        </div>
     </div>
 
     <div class="bg-image bg-img-workshop-beginner col-4_xs-12 tall-40"> </div>
@@ -277,19 +291,23 @@
     <div class="bg-image bg-img-workshop-intermediate col-4_xs-12 tall-40 hide-xs"> </div>
         
     <div class="padded-5 col-8_xs-12-middle tall-40 bg-dark">
-        <h2> Intermediate workshops </h2>
-        <p> Learn to make more specific arrengements that stand out in a room or place. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae fugit omnis voluptatum esse laboriosam voluptate minima totam facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, eligendi totam dolorum est et quo necessitatibus, porro vel, velit delectus inventore sit repellendus sapiente optio non nisi neque quaerat consequatur!</p>
-        <p class="medium-text"> $60 for the entire workshop </p>
-        <a href="/contact.html#contact" class="button"> Contact us to make reservation </a>
+        <div data-aos="fade-left" data-aos-duration="1000">
+            <h2> Intermediate workshops </h2>
+            <p> Learn to make more specific arrengements that stand out in a room or place. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae fugit omnis voluptatum esse laboriosam voluptate minima totam facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, eligendi totam dolorum est et quo necessitatibus, porro vel, velit delectus inventore sit repellendus sapiente optio non nisi neque quaerat consequatur!</p>
+            <p class="medium-text"> $60 for the entire workshop </p>
+            <a href="/contact.html#contact" class="button"> Contact us to make reservation </a>
+        </div>
     </div>
 
     <div class="bg-image bg-img-workshop-intermediate col-4_xs-12 tall-40 show-xs"> </div>
                 
     <div class="padded-5 col_xs-12-8-middle tall-40">
-        <h2> Advanced workshops </h2>
-        <p> In our advanced workshops you will learn to make bouquets for special occasions, like weddings, with an extra touch of magic. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae fugit omnis voluptatum esse laboriosam voluptate minima totam facilis, soluta officia eaque obcaecati quis, nisi saepe sit sunt quo ipsa suscipit?</p>
-        <p class="medium-text"> $90 for the entire workshop</p>
-        <a href="/contact.html#contact" class="button"> Contact us to make reservation </a>
+        <div data-aos="fade-left" data-aos-duration="1000">
+            <h2> Advanced workshops </h2>
+            <p> In our advanced workshops you will learn to make bouquets for special occasions, like weddings, with an extra touch of magic. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae fugit omnis voluptatum esse laboriosam voluptate minima totam facilis, soluta officia eaque obcaecati quis, nisi saepe sit sunt quo ipsa suscipit?</p>
+            <p class="medium-text"> $90 for the entire workshop</p>
+            <a href="/contact.html#contact" class="button"> Contact us to make reservation </a>
+        </div>
     </div>
 
     <div class="bg-image bg-img-workshop-advanced col-4_xs-12 tall-40"> </div>
@@ -403,6 +421,10 @@
 
    <!--------------------- Add jQuery -------------------->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!------------------ Animate on scroll ---------------->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 
     <!-------------- custom javascript files -------------->
     <script src="/scripts.js"></script> 
