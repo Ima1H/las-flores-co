@@ -1,5 +1,6 @@
 ---
 layout: default
+newsletter-background: bg-light
 services:
 - column-size: col-3_md-6
   background_image: /images/las-flores-co-store-small.jpg
@@ -220,16 +221,5 @@ reviews:
 
 </section>
 
-<!------------------------------- Call to action ------------------------>
-<section class="grid-middle text-center padded-5 bg-light tall-40">
-    <div class="col-12"> 
-        <h2> Stay in Touch</h2>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quod, nesciunt consequatur cupiditate excepturi harum perferendis nulla et tenetur magni! </p>
-
-        <form class="email-signup "action="htps://formspree.io/hello@theflower.co" method="POST">
-            <input type="text" name="name" placeholder="Your First Name">
-            <input type="e-mail" name="_replyto" placeholder="Your Email">
-            <input type="submit" value="Send" class="button">
-        </form>
-    </div>
-</section>
+<!------------------------------- Call to action - newsletter ------------------------>
+{% include newsletter.html %}

@@ -3,6 +3,7 @@ layout: default
 popup-gallery: true
 gallery-background: bg-white
 review-background: bg-light
+newsletter-background: bg-dark
 gallery:
   - column-size: col-4_md-6
     aspect-ratio: square
@@ -128,19 +129,8 @@ reviews:
 </header>
 
 
-<!------------------------------- Call to action ------------------------>
-<section class="grid-middle text-center padded-5 bg-dark tall-40">
-  <div class="col-12"> 
-    <h2> Stay in Touch</h2>
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quod, nesciunt consequatur cupiditate excepturi harum perferendis nulla et tenetur magni! </p>
-
-    <form class="email-signup "action="htps://formspree.io/hello@theflower.co" method="POST">
-      <input type="text" name="name" placeholder="Your First Name">
-      <input type="e-mail" name="_replyto" placeholder="Your Email">
-      <input type="submit" value="Send" class="button">
-    </form>
-  </div>
-</section>
+<!------------------------------- Call to action - newsletter ------------------------>
+{% include newsletter.html %}
 
 <!----------------------------- Gallery Bouquets --------------------------->
 
