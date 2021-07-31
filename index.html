@@ -106,13 +106,13 @@ services:
     <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi accusantium unde, odio corporis eligendi consequuntur quisquam dignissimos placeat consectetur. Consequuntur fugiat exercitationem mollitia at, sequi minus! Cupiditate vel consequuntur quos!</p>
     
     <div class="slider-container"> 
-
+        {% for item in page.gallery %}
         <div class="slider-item">
             <div class="bg-image-slider bg-img-gallery-1 {{item.aspect-ratio}}" style="background-image: url('{{item.background_image}}');"> </div>
             <p class="title"> {{item.name-bouquet}} </p>
             <p class="caption text-center"> {{item.description}} </p>
         </div>
-       
+        {% endfor %}
     </div>
         
     <div class="padded-1 col-12 grid-center">
