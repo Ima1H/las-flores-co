@@ -390,7 +390,7 @@ header .logo {
     top: 5vh;
     right: 4vh;
     z-index: 9;
-    padding: 12px;
+    padding: 8px;
 }
 
 /*this is where you can chand the color of the buttons*/
@@ -424,7 +424,7 @@ header .logo {
 /* make sure this has the same top as the burger button has padding*/
 .hamburger-button.active .hamburger-top{
     position: absolute;
-    top: 12px;
+    top: 8px;
     transform: rotateZ(45deg);
 }
   
