@@ -25,12 +25,15 @@ reviews:
 - author: Rob
   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptate atque corrupti dolorum cumque.
   background_image: /images/las-flores-co-review-rob.jpg
+  column-size: col-4
 - author: Julie
   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptate atque corrupti dolorum cumque.
   background_image: /images/las-flores-co-review-julie.jpg
+  column-size: col-4
 - author: Jake
   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptate atque corrupti dolorum cumque.
   background_image: /images/las-flores-co-review-jake.jpg
+  column-size: col-4
 ---
 
 
@@ -148,7 +151,7 @@ reviews:
         {% for item in page.reviews %}
             
         <!---- First Card ----->
-        <div class="slider-item text-center">
+        <div class="{{item.column-size}} text-center">
             <div class="card-review"> 
                 <img src="{{item.background_image}}" class="profile">
                 <p class="author"> {{item.author}} </p>
