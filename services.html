@@ -24,13 +24,13 @@ services:
 reviews:
 - author: Rob
   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptate atque corrupti dolorum cumque.
-  image: /images/las-flores-co-review-rob.jpg
+  background_image: /images/las-flores-co-review-rob.jpg
 - author: Julie
   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptate atque corrupti dolorum cumque.
-  image: /images/las-flores-co-review-julie.jpg
+  background_image: /images/las-flores-co-review-julie.jpg
 - author: Jake
   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptate atque corrupti dolorum cumque.
-  image: /images/las-flores-co-review-jake.jpg
+  ibackground_image: /images/las-flores-co-review-jake.jpg
 ---
 
 
@@ -148,7 +148,7 @@ reviews:
             <!---- First Card ----->
             <div class="slider-item text-center">
                 <div class="card-review"> 
-                    <img src="{{item.image}}" class="profile">
+                    <img src="{{item.background_image}}" class="profile">
                     <p class="author"> {{item.author}} </p>
                     <p> {{item.description}} </p>
                     <span> ★ ★ ★ ★ ★</span>

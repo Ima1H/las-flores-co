@@ -1,16 +1,15 @@
- // Hamburger menu
 $( document ).ready(function() {
-    $('.hamburger-button').click(function(){
-        $('.hamburger-button').toggleClass('active');
-        $('.mobile-menu').toggleClass('active');
-    });
-});
+
+  // Hamburger menu
+  $('.hamburger-button').click(function(){
+      $('.hamburger-button').toggleClass('active');
+      $('.mobile-menu').toggleClass('active');
+  });
 
 
-//Latest creations - slider gallery
-$(document).ready(function(){
+
+  //Latest creations - slider gallery
   $('.slider-container').slick({
-
     autoplay: true,             // Do we want it to autoplay? true or false
     autoplaySpeed: 3000,        // How long between each slide when auto-playing
     speed: 1000,                // How fast is the transition in milliseconds
@@ -35,10 +34,10 @@ $(document).ready(function(){
       }
     ]
   });
-});
 
-//review slider container
-$(document).ready(function(){
+
+  //review slider container
+ 
   $('.testimonial-slider-container').slick({
     autoplay: true,         // Do we want it to autoplay? true or false
     autoplaySpeed: 3000,    // How long between each slide when auto-playing
