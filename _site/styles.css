@@ -424,7 +424,7 @@ header .logo {
 /* make sure this has the same top as the burger button has padding*/
 .hamburger-button.active .hamburger-top{
     position: absolute;
-    top: 8px;
+    top: 12px;
     transform: rotateZ(45deg);
 }
   
