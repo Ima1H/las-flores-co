@@ -1,5 +1,6 @@
 ---
 layout: default
+review-background: bg-white
 gallery:
 - column-size: col-4_md-6
   aspect-ratio: square
@@ -58,7 +59,7 @@ services:
 
 <header class="padded-1 grid tall-100 md-tall-80 bg-image-header">
 
-    {% include header-nav.html %}
+    {% include site-header-nav.html %}
     
     <div class="padded-5 col-12 grid-center">
         <div class="col-9"> 
@@ -106,20 +107,16 @@ services:
     
     <div class="slider-container"> 
 
-        {% for item in page.gallery %}
-
         <div class="slider-item">
             <div class="bg-image-slider bg-img-gallery-1 {{item.aspect-ratio}}" style="background-image: url('{{item.background_image}}');"> </div>
             <p class="title"> {{item.name-bouquet}} </p>
             <p class="caption text-center"> {{item.description}} </p>
         </div>
-
-        {% endfor %}
        
     </div>
         
     <div class="padded-1 col-12 grid-center">
-        <a href="/bouquets.html#bouquets" class="text-center button uppercase"> More Bouquets </a>
+        <a href="/bouquets.html#boutquets" class="text-center button uppercase"> More Bouquets </a>
     </div>
 </section> 
 

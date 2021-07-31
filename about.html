@@ -39,7 +39,7 @@ reviews:
 
     <header class="padded-1 grid tall-80 bg-image-header">
         
-        {% include header-nav.html %}
+        {% include site-header-nav.html %}
     
         <div class="padded-5 col-12 grid-center">
             <div class="col-9"> 
@@ -145,44 +145,6 @@ reviews:
 
     </section>
     
+
     <!-------------------------------- Reviews  ------------------------------>
-    <section class="text-center padded-5 bg-white hide-md">
-        <h2> Reviews </h2>
-        <div class="slider-container padded-1 dark-text"> 
-
-            {% for item in page.reviews %}
-            
-            <!---- First Card ----->
-            <div class="slider-item text-center">
-                <div class="card-review"> 
-                    <img src="{{item.image}}" class="profile">
-                    <p class="author"> {{item.author}} </p>
-                    <p> {{item.description}} </p>
-                    <span> ★ ★ ★ ★ ★</span>
-                </div>
-            </div>
-
-            {% endfor %}
-        </div>
-    </section>
-
-
-     <section class="text-center padded-5 bg-white show-md">
-        <h2> Reviews </h2>
-        <div class="testimonial-slider-container padded-1 dark-text show-md">  
-             
-            {% for item in page.reviews %}
-
-            <!---- First Card ----->
-            <div class="slider-item text-center">
-                <div class="card-review"> 
-                    <img src="{{item.image}}" class="profile">
-                    <p class="author"> {{item.author}} </p>
-                    <p> {{item.description}} </p>
-                    <span> ★ ★ ★ ★ ★</span>
-                </div>
-            </div>
-
-            {% endfor %}
-        </div>
-    </section>
+    {% include review.html %}

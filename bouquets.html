@@ -1,73 +1,107 @@
 ---
 layout: default
+popup-gallery: true
+gallery-background: bg-white
+review-background: bg-light
 gallery:
 - column-size: col-4_md-6
   aspect-ratio: square
   background_image: /images/las-flores-co-gallery-6.jpg
   name-bouquet: Floral Darling
   price: $36.98
+  type: spring
 - column-size: col-4_md-6
   aspect-ratio: square
   background_image: /images/las-flores-co-gallery-2.jpg
   name-bouquet: Heaven Scent
   price: $56.37
+  type: winter
 - column-size: col-4_md-6
   aspect-ratio: square
   background_image: /images/las-flores-co-gallery-4.jpg
   name-bouquet: Blossom
   price: $26.31
+  type: summer
 - column-size: col-4_md-6
   aspect-ratio: square
   background_image: /images/las-flores-co-gallery-1.jpg
   name-bouquet: Sunrise
   price: $19.56
+  type: autumn
 - column-size: col-4_md-6
   aspect-ratio: square
   background_image: /images/las-flores-co-gallery-3.jpg
   name-bouquet: Snow White
   price: $33.56
+  type: spring
 - column-size: col-4_md-6
   aspect-ratio: square
   background_image: /images/las-flores-co-gallery-7.jpg
   name-bouquet: Ava Blossom
   price: $10.53
+  type: spring
 - column-size: col-4_md-6
   aspect-ratio: square
   background_image: /images/las-flores-co-gallery-5.jpg
   name-bouquet: Gorgeous
   price: $36.98
+  type: autumn
 - column-size: col-4_md-6
   aspect-ratio: square
   background_image: /images/las-flores-co-gallery-6.jpg
   name-bouquet: Legend
   price: $25.53
+  type: spring
 - column-size: col-4_md-6
   aspect-ratio: square
   background_image: /images/las-flores-co-gallery-4.jpg
   name-bouquet: Carribbean 
   price: $19.56
+  type: summer
 - column-size: col-4_md-6
   aspect-ratio: square
   background_image: /images/las-flores-co-gallery-2.jpg
   name-bouquet: Breeze
   price: $50.65
+  type: winter
 - column-size: col-4_md-6
   aspect-ratio: square
   background_image: /images/las-flores-co-gallery-1.jpg
   name-bouquet: Whintry whites
   price: $22.75
+  type: autumn
 - column-size: col-4_md-6
   aspect-ratio: square
   background_image: /images/las-flores-co-gallery-5.jpg
   name-bouquet: Sweet success
   price: $29.54
+  type: autumn
+reviews:
+- author: Emma
+  description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptate atque corrupti dolorum cumque.
+  image: /images/las-flores-co-review-emma.jpg
+- author: Joshua
+  description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptate atque corrupti dolorum cumque.
+  image: /images/las-flores-co-review-joshua.jpg
+- author: Sylvie
+  description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptate atque corrupti dolorum cumque.
+  image: /images/las-flores-co-review-sylvie.jpg
+- author: Rob
+  description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptate atque corrupti dolorum cumque.
+  image: /images/las-flores-co-review-rob.jpg
+- author: Julie
+  description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptate atque corrupti dolorum cumque.
+  image: /images/las-flores-co-review-julie.jpg
+- author: Jake
+  description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptate atque corrupti dolorum cumque.
+  image: /images/las-flores-co-review-jake.jpg
 ---
 
 <!----------------------------- Header Banner --------------------------->
 
 <header class="padded-1 grid tall-80 bg-image-header">
 
-  {% include header-nav.html %}
+  {% include site-header-nav.html %}
 
   <div class="padded-5 col-12 grid-center">
     <div class="col-12"> 
@@ -98,7 +132,10 @@ gallery:
 
 <!----------------------------- Gallery Bouquets --------------------------->
 
-<section class="padded-5" >
+<!-- Popup gallery -->
+
+{% if page.popup-gallery == true %}
+<section class="padded-5 {{page.gallery-background}}">
 
   <h2 class="text-center" id="bouquets"> Our Bouquets </h2>
   <p class="text-center"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -116,8 +153,39 @@ gallery:
       </div>
   
     </a>    
-        
+    
     {% endfor %}
 
   </div> 
 </section>
+
+{% else %}
+
+<!-- Standard gallery -->
+
+<section class="padded-5 {{page.gallery-background}}">
+  <h2 class="text-center"> Our Bouquets </h2>
+  <p class="text-center"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  
+  <div class="gallery grid">
+      
+      {% for item in page.gallery %}
+      <div class="{{item.column-size}}"> 
+          <div> 
+              <div class="bg-image {{item.aspect-ratio}}" style="background-image: url('{{item.background_image}}');"> </div>
+                  
+              <div class="grid-bottom"> 
+                  <h4 class="col-6"> {{item.name-bouquet}}</h4>
+                  <h4 class="col-6 text-right"> {{item.price}} </h4>
+              </div>
+          </div>
+      </div>    
+  
+    {% endfor %}
+  </div> 
+</section>
+
+{% endif %}
+
+<!-------------------------------- Reviews  ------------------------------>
+{% include review.html %}
