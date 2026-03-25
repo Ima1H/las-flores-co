@@ -819,6 +819,16 @@ footer .button {
     padding: 0.4rem 1rem;
 }
 
+/* HubSpot button
+ */
+
+:root {
+  --hsf-global__font-family: 'Noto Sans SC', sans-serif;
+  --hsf-global__font-size: 1.1rem;
+  --hsf-global__color: #4a42a8;
+  --hsf-background__background-color: #b5a4a4;
+}
+
 
 /*------------------------------ Subscribe - button style --------------------------*/
 
