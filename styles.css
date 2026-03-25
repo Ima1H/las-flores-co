@@ -819,15 +819,37 @@ footer .button {
     padding: 0.4rem 1rem;
 }
 
-/* HubSpot button
+/* HubSpot form
+Ebony (green) - #6B705C
+(dark green) - #43463A
+Antique Brass (pink) - #CB997E */
+.button {
+    color: inherit;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid;
+    padding: 0.8rem 1rem;
+    margin-top: 1rem;
+}
+
+.button:hover {
+    border: 2px solid #6B705C;
+    color: white;
+    background-color: #6B705C;
+}
  */
 
 :root {
   --hsf-global__font-family: 'Noto Sans SC', sans-serif;
   --hsf-global__font-size: 1.1rem;
-  --hsf-global__color: #4a42a8;
-  --hsf-background__background-color: #b5a4a4;
+  --hsf-global__color: #43463A;
+  --hsf-button__color: inherit;
+  --hsf-button__background-color:  inherit;
+  --hsf-button__border: 2px solid #6B705C;
 }
+
+
 
 
 /*------------------------------ Subscribe - button style --------------------------*/
