@@ -840,14 +840,18 @@ Antique Brass (pink) - #CB997E */
 }
  */
 
-:root {
+
+ .hs-form-frame {
   --hsf-global__font-family: 'Noto Sans SC', sans-serif;
   --hsf-global__font-size: 1.1rem;
   --hsf-global__color: #43463A;
   --hsf-button__color: #6B705C;
-
+  --hsf-button__background-color: white;
+  --hsf-button__border: 2px solid #6B705C;
+  --hsf-button__border-radius: 0;
+  --hsf-button--hover__background-color: #6B705C;
+  --hsf-button--hover__color: white;
 }
-
 
 
 
